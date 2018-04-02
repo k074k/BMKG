@@ -23,17 +23,15 @@
         <span class="icon-bar"></span>
       </button>
       <div class="navbar-brand" style="height: 80px">
-        <a href="#myPage">
+        <span>
           <img src="<?php echo base_url('assets/img/logo.png') ?>" width="50px">
-          <span class="hidden-xs hidden-md">
-          </span>
-        </a>
+        </span>
+        <span class="hidden-xs hidden-md" style="font-weight:bold; color:black; font-size: 15px" >STASIUN GEOFISIKA SANGLAH</span>
     </div>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right" style="font-size:11px; padding-top:15px">
+      <ul class="nav navbar-nav navbar-right" style="font-size:12px; padding-top:15px">
         <li><a href="#about" style="font-weight:bold; color:black">PROFIL</a></li>
-        <li><a href="#services" style="font-weight:bold; color:black">GEOFISIKA</a></li>
         <li><a href="#portfolio" style="font-weight:bold; color:black">METEOROLGI</a></li>
         <li><a href="#pricing" style="font-weight:bold; color:black">KLIMATOLOGI</a></li>
         <li><a href="#contact"style="font-weight:bold; color:black">PUBLIKASI</a></li>
