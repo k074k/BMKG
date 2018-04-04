@@ -1,4 +1,4 @@
-<div class="container-fliud" style="background-color: #e6e6e659; height: 600px">
+<div class="container-fliud">
     <div class="container">
         <div class="row" style="margin-top: 80px;">
             <div class="col-lg-4">
