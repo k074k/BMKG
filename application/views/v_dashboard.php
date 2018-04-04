@@ -1,6 +1,6 @@
 <div class="container-fliud" style="margin-bottom: 80px">
     <div class="container">
-        <div class="row" style="margin-top: 80px;">
+        <div class="row">
           <!--Tabel Kiri -->
             <div class="col-lg-4">
                 <ul class="nav nav-tabs" style="margin-top:25px">

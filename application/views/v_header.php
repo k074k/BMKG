@@ -5,19 +5,11 @@
     <head> 
         <!-- Theme Made By www.w3schools.com - No Copyright --> 
         <title>Stasiun Geofisika Sanglah</title>  
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-hover-dropdown/2.2.1/bootstrap-hover-dropdown.min.js"></script> 
-         
- 
-        <!-- BootStrap dan JavaScript Offline --> 
-        <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.min.css'); ?>"> 
-        <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap-theme.min.css'); ?>"> 
-        <script src="<?php echo base_url('assets/js/jquery.js'); ?>"></script> 
-        <script src="<?php echo base_url('assets/js/npm.js'); ?> "></script> 
-        <script src="<?php echo base_url('assets/js/bootstrap.min.js'); ?> "></script> 
-         
+        <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/bootstrap.min.css'); ?>">
+        <script type="text/javascript" src="<?php echo base_url('assets/js/jquery.min.js'); ?>"></script>
+        <script type="text/javascript" src="<?php echo base_url('assets/js/bootstrap.min.js'); ?>"></script>
  
           <!-- CSS --> 
           <style> 
@@ -29,48 +21,43 @@
           </style>
     </head>
 
-    <body data-spy="scroll" data-target=".navbar" data-offset="60" style="background-color: #f1f1f1">
-        
-        <nav class="navbar navbar-default navbar-fixed-top" style="background-color:white">
+    <body style="background-color: #f1f1f1">
+           <nav class="navbar navbar-default" style="background-color: white">
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" style="margin-top: 25px;">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <div class="navbar-brand" style="height: 80px">
-                        <span>
-                            <img src="<?php echo base_url('assets/img/logo.png') ?>" width="50px">
-                        </span>
-                        <span class="hidden-xs hidden-md" style="font-weight:bold; color:black; font-size: 15px" >STASIUN GEOFISIKA SANGLAH</span>
-                    </div>
+                    <div class="navbar-brand" style="padding-top: 10px;"> 
+                        <span> 
+                            <img src="<?php echo base_url('assets/img/logo.png') ?>" width="30px"> 
+                        </span> 
+                        <span class="hidden-xs hidden-md" style="font-weight:bold; color:black; font-size: 14px" >
+                            STASIUN GEOFISIKA SANGLAH
+                        </span> 
+                    </div> 
                 </div>
-                
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav navbar-right" style="font-size:12px; padding-top:15px">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right" style="font-size: 12px; font-weight: bold;">
                         <li class="dropdown">
-                            <a style="font-weight:bold; color:black" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="100" data-close-others="false">
-                            PROFILE <b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu" style="margin-top: 15px; width: 215px;">
-                                <li><a tabindex="-1" href="#">My Account</a></li>
-                                <li class="divider"></li>
-                                <li><a tabindex="-1" href="#">Change Email</a></li>
-                                <li class="divider"></li>
-                                <li><a tabindex="-1" href="#">Change Password</a></li>
-                                <li class="divider"></li>
-                                <li><a tabindex="-1" href="#">Logout</a></li>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">PROFILE<span class="sr-only">(current)</span>
+                            <span class="caret"></span></a>
+                            <ul class="dropdown-menu" style="font-size: 14px">
+                                <li><a href="#">Sejarah</a></li>
+                                <li><a href="#">Visi dan Misi</a></li>
+                                <li><a href="#">Struktur Organisasi</a></li> 
                             </ul>
                         </li>
-                        <li><a href="#portfolio" style="font-weight:bold; color:black">METEOROLGI</a></li>
-                        <li><a href="#pricing" style="font-weight:bold; color:black">KLIMATOLOGI</a></li>
-                        <li><a href="#contact"style="font-weight:bold; color:black">PUBLIKASI</a></li>
-                        <li><a href="#contact" style="font-weight:bold; color:black">LAYANAN ONLINE</a></li>
-                        <li><a href="#contact" style="font-weight:bold; color:black">ARTIKEL</a></li>
+                        <li><a href="#">METEOROLOGI</a></li>
+                        <li><a href="#">KLIMATOLOGI</a></li>
+                        <li><a href="#">PUBLIKASI</a></li>
+                        <li><a href="#">LAYANAN ONLINE</a></li>
+                        <li><a href="#">ARTIKEL</a></li>
                     </ul>
-                </div>
+                </div> <!-- /.navbar-collapse -->
             </div>
         </nav>
         
