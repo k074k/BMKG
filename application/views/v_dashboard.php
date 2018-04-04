@@ -1,4 +1,4 @@
-<div class="container-fliud">
+<div class="container-fliud" style="margin-bottom: 80px">
     <div class="container">
         <div class="row" style="margin-top: 80px;">
           <!--Tabel Kiri -->
@@ -28,9 +28,8 @@
                 <ul class="nav nav-tabs" style="margin-top: 25px">
                     <li class="active" style="font-size: 12px; font-weight: bold"><a>Peta Gempabumi</a></li>
                 </ul>
-                <div style="margin-top:10px; background-color:white; height: 400px; box-shadow: 1px 1px 3px grey;" class="col-lg-12">
+                <div id="map" style="margin-top:10px; height: 400px; box-shadow: 1px 1px 3px grey; padding: 0px 0px 0px 0px" class="col-lg-12">
                   <!--Maps-->
-                  <div id="map"></div>
                   <script>
                     var citymap = {
                       chicago: {
