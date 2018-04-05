@@ -1,5 +1,5 @@
-<div class="container-fliud" style="margin-bottom: 80px">
-    <div class="container">
+<div class="container">
+    <div class="container"  style="margin-bottom: 80px; margin-top: 70px">
         <div class="row">
           <!--Tabel Kiri -->
             <div class="col-lg-4">
@@ -13,16 +13,17 @@
                 </ul>
                 <div class="tab-content">
                     <div id="Gempa" class="tab-pane fade in active">
-                        <div style="margin-top:10px; background-color:white; height: 300px; box-shadow: 1px 1px 3px grey;" class="col-lg-12">
+                        <div style="margin-top:10px; background-color:white; height: 400px; box-shadow: 1px 1px 3px grey;" class="col-lg-12">
                         </div>
                     </div>
                     <div id="Gempa2" class="tab-pane fade">
-                        <div style="margin-top:10px; background-color:white; height: 300px; box-shadow: 1px 1px 3px grey;" class="col-lg-12">
+                        <div style="margin-top:10px; background-color:white; height: 400px; box-shadow: 1px 1px 3px grey;" class="col-lg-12">
                         </div>
                     </div>
                 </div>
             </div>
             <!--//Tabel Kiri -->
+            
             <!--Tabel Kanan -->
             <div class="col-lg-8">
                 <ul class="nav nav-tabs" style="margin-top: 25px">
