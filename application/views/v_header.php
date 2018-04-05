@@ -54,8 +54,8 @@
                                 <li><a href="<?php echo base_url('profile/struktur'); ?>">Struktur Organisasi</a></li> 
                             </ul>
                         </li>
-                        <li><a href="#">METEOROLOGI</a></li>
-                        <li><a href="#">KLIMATOLOGI</a></li>
+                        <li><a href="<?php echo base_url('dashboard/meteorologi'); ?>">METEOROLOGI</a></li>
+                        <li><a href="<?php echo base_url('dashboard/klimatologi'); ?>">KLIMATOLOGI</a></li>
                         <li><a href="#">PUBLIKASI</a></li>
                         <li><a href="#">LAYANAN ONLINE</a></li>
                         <li><a href="#">ARTIKEL</a></li>

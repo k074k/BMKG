@@ -8,4 +8,16 @@ class Dashboard extends CI_Controller {
         $this->load->view('v_dashboard');
         $this->load->view('v_footer');
 	}
+    
+    public function klimatologi()   {
+        $this->load->view('v_header');
+        $this->load->view('v_klimatologi');
+        $this->load->view('v_footer');
+    }
+    
+    public function meteorologi()   {
+        $this->load->view('v_header');
+        $this->load->view('v_meteorologi');
+        $this->load->view('v_footer');
+    }
 }
