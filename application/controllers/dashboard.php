@@ -26,4 +26,10 @@ class Dashboard extends CI_Controller {
         $this->load->view('v_publikasi');
         $this->load->view('v_footer');
     }
+    
+    public function suhu()  {
+        $this->load->view('v_header');
+        $this->load->view('v_suhu');
+        $this->load->view('v_footer');
+    }
 }
