@@ -56,7 +56,7 @@
                         </li>
                         <li><a href="<?php echo base_url('dashboard/meteorologi'); ?>">METEOROLOGI</a></li>
                         <li><a href="<?php echo base_url('dashboard/klimatologi'); ?>">KLIMATOLOGI</a></li>
-                        <li><a href="#">PUBLIKASI</a></li>
+                        <li><a href="<?php echo base_url('dashboard/publikasi'); ?>">PUBLIKASI</a></li>
                         <li><a href="#">LAYANAN ONLINE</a></li>
                         <li><a href="#">ARTIKEL</a></li>
                     </ul>
