@@ -58,7 +58,7 @@
                         Hasilnya disampaikan dalam bentuk informasi, tabulasi, diagram, peta dan data yang sifatnya saling melengkapi.
                     </p>
                     <hr>
-                    <div class="form-group" style="padding-left: 85%">
+                    <div class="form-group ">
                         <button type="submit" class="btn btn-primary">
                             Unduh
                         </button>
