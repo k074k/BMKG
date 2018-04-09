@@ -18,7 +18,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="<?php echo base_url('dashboard/suhu'); ?>">
+                    <a href="<?php echo base_url('meteorologi/suhu'); ?>">
                         <div class="panel-footer">
                             <span class="pull-left">View Details</span>
                             <span class="pull-right">
@@ -47,7 +47,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#">
+                    <a href="<?php echo base_url('meteorologi/tekanan'); ?>">
                         <div class="panel-footer">
                             <span class="pull-left">View Details</span>
                             <span class="pull-right">
@@ -76,7 +76,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#">
+                    <a href="<?php echo base_url('meteorologi/kelembaban'); ?>">
                         <div class="panel-footer">
                             <span class="pull-left">View Details</span>
                             <span class="pull-right">
@@ -107,7 +107,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#">
+                    <a href="<?php echo base_url('meteorologi/hujan'); ?>">
                         <div class="panel-footer">
                             <span class="pull-left">View Details</span>
                             <span class="pull-right">
@@ -136,7 +136,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#">
+                    <a href="<?php echo base_url('meteorologi/penguapan'); ?>">
                         <div class="panel-footer">
                             <span class="pull-left">View Details</span>
                             <span class="pull-right">
@@ -165,7 +165,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#">
+                    <a href="<?php echo base_url('meteorologi/penyinaran'); ?>">
                         <div class="panel-footer">
                             <span class="pull-left">View Details</span>
                             <span class="pull-right">
