@@ -46,7 +46,9 @@
                     <div class="navbar-brand" style="padding-top: 10px;">
                         <ul>
                         <span> 
-                            <a href="<?php echo base_url(''); ?>"><img src="<?php echo base_url('assets/img/logo.png') ?>" width="30px"></a>
+                            <a href="<?php echo base_url(''); ?>">
+                                <img src="<?php echo base_url('assets/img/logo.png') ?>" width="30px">
+                            </a>
                         </span> 
                         <span class="hidden-xs hidden-md" style="font-weight:bold; color:black; font-size: 14px" >
                             STASIUN GEOFISIKA SANGLAH
@@ -68,7 +70,7 @@
                         <li><a href="<?php echo base_url('meteorologi'); ?>">METEOROLOGI</a></li>
                         <li><a href="<?php echo base_url('klimatologi'); ?>">KLIMATOLOGI</a></li>
                         <li><a href="<?php echo base_url('publikasi'); ?>">PUBLIKASI</a></li>
-                        <li><a href="#">LAYANAN ONLINE</a></li>
+                        <li><a href="<?php echo base_url('publikasi/layananOnline'); ?>">LAYANAN ONLINE</a></li>
                         <li><a href="<?php echo base_url('publikasi/artikel'); ?>">ARTIKEL</a></li>
                     </ul>
                 </div> <!-- /.navbar-collapse -->

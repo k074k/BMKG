@@ -21,4 +21,10 @@ class Publikasi extends CI_Controller {
         $this->load->view('v_footer');
     }
     
+    public function layanaOnline() {
+        $this->load->view('v_header');
+        $this->load->view('v_katalog');
+        $this->load->view('v_footer');
+    }
+    
 }
