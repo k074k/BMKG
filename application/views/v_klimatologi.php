@@ -1,9 +1,9 @@
 <div class="container">
     <div class="container"  style="margin-bottom: 80px; margin-top: 70px">
-        <div class="row">
+        <div class="row" style="margin-top: 25px">
           <!--Tabel Kiri -->
             <div class="col-lg-4">
-                <ul class="nav nav-tabs" style="margin-top:25px">
+                <ul class="nav nav-tabs">
                     <li class="active">
                         <a data-toggle="tab" href="#CurahHujan" style="font-size: 12px; font-weight: bold">Perkiraan Curah Hujan</a>
                     </li>
@@ -31,7 +31,7 @@
             
             <!--Tabel Kanan -->
             <div class="col-lg-8">
-                <ul class="nav nav-tabs" style="margin-top: 25px">
+                <ul class="nav nav-tabs" >
                     <li class="active" style="font-size: 12px; font-weight: bold"><a>Peta Klimatologi</a></li>
                 </ul>
                 <div id="map" style="margin-top:10px; height: 400px; box-shadow: 1px 1px 3px grey; padding: 0px 0px 0px 0px" class="col-lg-12">

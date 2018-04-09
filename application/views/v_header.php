@@ -10,13 +10,23 @@
         <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/style.css'); ?>">
         <script type="text/javascript" src="<?php echo base_url('assets/js/jquery.min.js'); ?>"></script>
         <script type="text/javascript" src="<?php echo base_url('assets/js/java.js'); ?>"></script>
+        <script src="<?php echo base_url('assets/js/highcharts.js'); ?>"></script>
+        <script src="<?php echo base_url('assets/modules/series-label.js'); ?>"></script>
+        <script src="<?php echo base_url('code/modules/exporting.js'); ?>"></script>
  
-          <!-- CSS --> 
-          <style> 
+          <!-- CSS Map dan Grafik--> 
+          <style type="text/css"> 
             #map { 
               height: 100%; 
               width:100%; 
-              margin-top: 10px; 
+              margin-top: 10px;
+            }
+              
+            #container {
+	           min-width: 310px;
+	           max-width: 800px;
+	           height: 400px;
+	           margin: 0 auto
             } 
           </style>
     </head>
@@ -56,7 +66,7 @@
                         </li>
                         <li><a href="<?php echo base_url('dashboard/meteorologi'); ?>">METEOROLOGI</a></li>
                         <li><a href="<?php echo base_url('dashboard/klimatologi'); ?>">KLIMATOLOGI</a></li>
-                        <li><a href="#">PUBLIKASI</a></li>
+                        <li><a href="<?php echo base_url('dashboard/publikasi'); ?>">PUBLIKASI</a></li>
                         <li><a href="#">LAYANAN ONLINE</a></li>
                         <li><a href="#">ARTIKEL</a></li>
                     </ul>

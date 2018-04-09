@@ -6,7 +6,7 @@
     </div>
 </div>
 <div class="col-lg-12" style="background-color: white; margin-top: 25px; box-shadow: 1px 1px 1px;">
-    <div class="col-lg-8" style="margin-bottom: 65px; padding-left: 135px; padding-top: 25px; ">
+    <div class="col-lg-8" style="margin-bottom: 65px; padding-left: 10%; padding-top: 25px; ">
         <h2 style="padding-bottom: 25px">Visi dan Misi</h2>
         <p>
             Dalam rangka mendukung dan mengemban tugas pokok dan fungsi serta memperhatikan kewenangan BMKG agar lebih efektif dan efisien, maka diperlukan aparatur yang profesional, bertanggung jawab dan berwibawa serta bebas dari Korupsi, Kolusi, dan Nepotisme (KKN), disamping itu harus dapat menjunjung tinggi kedisiplinan, kejujuran dan kebenaran guna ikut serta memberikan pelayanan informasi yang cepat, tepat dan akurat. Oleh karena itu kebijakan yang akan dilakukan BMKG Tahun 2010-2014 adalah mengacu pada Visi, Misi, dan Tujuan BMKG yang telah ditetapkan.
