@@ -1,12 +1,14 @@
 <div class="container" style="margin-top: 70px">
-    <div class="container" style="margin-left:45px;">
+    <div class="col-lg-12" style="margin-left: 3%">
         <div class="row">
             <h3>Meteorologi</h3>
         </div>
     </div>
 </div>
+
 <div class="col-lg-12" style="background-color: white; margin-top: 25px; box-shadow: 1px 1px 1px;">
-    <div class="col-lg-8" style="margin-bottom: 65px; padding-left: 10%; padding-top: 25px; ">
+<div class="container">
+    <div class="col-lg-12" style="margin-bottom: 65px; margin-top: 3%">
         <div class="col-lg-3">
             <form role="form">
                 <div class="form-group"> 
@@ -20,11 +22,11 @@
                 </div>
             </form>
         </div>
-        <div id="grafik" style="margin-top: 10%"></div>
-        <div id="grafik2" style="margin-top: 10%"></div>
-        <div id="grafik3" style="margin-top: 10%"></div>
-        <div id="grafik4" style="margin-top: 10%"></div>
-        <div id="grafik5" style="margin-top: 10%; margin-bottom: 15%"></div>
+        <div id="grafik" style="margin-top: 5%"></div>
+        <div id="grafik2" style="margin-top: 5%"></div>
+        <div id="grafik3" style="margin-top: 5%"></div>
+        <div id="grafik4" style="margin-top: 5%"></div>
+        <div id="grafik5" style="margin-top: 5%; margin-bottom: 5%"></div>
         
         <script type="text/javascript">
             Highcharts.chart('grafik', {
@@ -331,4 +333,5 @@
             });
 		</script>
     </div>
+</div>
 </div>

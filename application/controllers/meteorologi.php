@@ -3,6 +3,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Meteorologi extends CI_Controller {
     
+    public function index()   {
+        $this->load->view('v_header');
+        $this->load->view('v_meteorologi');
+        $this->load->view('v_footer');
+    }
+    
     public function suhu()  {
         $this->load->view('v_header');
         $this->load->view('v_suhu');

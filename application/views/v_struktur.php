@@ -6,7 +6,8 @@
     </div>
 </div>
 <div class="col-lg-12" style="background-color: white; margin-top: 25px; box-shadow: 1px 1px 1px;">
-    <div class="col-lg-8" style="margin-bottom: 65px; padding-left: 10%; padding-top: 25px; ">
+    <div class="container">
+    <div class="col-lg-8" style="margin-bottom: 65px; padding-left: 5%; padding-top: 25px; ">
         <h2 style="padding-bottom: 25px">Struktur Organisasi</h2>
         <img style="width: 100%" src="<?php echo base_url('assets/img/struktur.jpg'); ?>">    
     </div>

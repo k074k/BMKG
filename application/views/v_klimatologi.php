@@ -1,7 +1,7 @@
 <div class="container">
     <div class="container"  style="margin-bottom: 80px; margin-top: 70px">
         <div class="row" style="margin-top: 25px">
-          <!--Tabel Kiri -->
+          <!-- Tabel Kiri -->
             <div class="col-lg-4">
                 <ul class="nav nav-tabs">
                     <li class="active">
@@ -22,7 +22,7 @@
                 </ul>
                 <div class="tab-content">
                     <div id="SifatHujan" class="tab-pane fade in active">
-                        <div style="margin-top:10px; background-color:white; height: 150px; box-shadow: 1px 1px 3px grey;" class="col-lg-12">
+                        <div style="margin-top:10px; margin-bottom: 5%; background-color:white; height: 150px; box-shadow: 1px 1px 3px grey;" class="col-lg-12">
                         </div>
                     </div>
                 </div>
@@ -30,7 +30,7 @@
             <!--//Tabel Kiri -->
             
             <!--Tabel Kanan -->
-            <div class="col-lg-8">
+            <div class="col-lg-8" >
                 <ul class="nav nav-tabs" >
                     <li class="active" style="font-size: 12px; font-weight: bold"><a>Peta Klimatologi</a></li>
                 </ul>

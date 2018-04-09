@@ -13,6 +13,7 @@
         <script src="<?php echo base_url('assets/js/highcharts.js'); ?>"></script>
         <script src="<?php echo base_url('assets/modules/series-label.js'); ?>"></script>
         <script src="<?php echo base_url('code/modules/exporting.js'); ?>"></script>
+        <link href="<?php echo base_url('assets/img/icon.png') ?>" type="icon/x-image" rel="shortcut icon">
  
           <!-- CSS Map dan Grafik--> 
           <style type="text/css"> 
@@ -64,11 +65,11 @@
                                 <li><a href="<?php echo base_url('profile/struktur'); ?>">Struktur Organisasi</a></li> 
                             </ul>
                         </li>
-                        <li><a href="<?php echo base_url('dashboard/meteorologi'); ?>">METEOROLOGI</a></li>
-                        <li><a href="<?php echo base_url('dashboard/klimatologi'); ?>">KLIMATOLOGI</a></li>
-                        <li><a href="<?php echo base_url('dashboard/publikasi'); ?>">PUBLIKASI</a></li>
+                        <li><a href="<?php echo base_url('meteorologi'); ?>">METEOROLOGI</a></li>
+                        <li><a href="<?php echo base_url('klimatologi'); ?>">KLIMATOLOGI</a></li>
+                        <li><a href="<?php echo base_url('publikasi'); ?>">PUBLIKASI</a></li>
                         <li><a href="#">LAYANAN ONLINE</a></li>
-                        <li><a href="#">ARTIKEL</a></li>
+                        <li><a href="<?php echo base_url('publikasi/artikel'); ?>">ARTIKEL</a></li>
                     </ul>
                 </div> <!-- /.navbar-collapse -->
             </div>

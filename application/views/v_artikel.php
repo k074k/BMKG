@@ -1,7 +1,7 @@
 <div class="container" style="margin-top: 70px">
     <div class="container" style="margin-left:45px;">
         <div class="row">
-            <h3>Publikasi</h3>
+            <h3>Artikel</h3>
             <hr style="box-shadow: 0px 1px 1px grey;">
         </div>
     </div>
@@ -61,8 +61,8 @@
                         </p>
                         <hr>
                         <div class="form-group ">
-                            <button type="submit" class="btn btn-primary">
-                                Unduh
+                            <button type="button" class="btn btn-primary" >
+                                <a href="<?php echo base_url('publikasi/detailArtikel') ?>">View Details</a>
                             </button>
                         </div>
                     </div>

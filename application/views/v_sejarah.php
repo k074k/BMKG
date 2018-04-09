@@ -6,7 +6,8 @@
     </div>
 </div>
 <div class="col-lg-12" style="background-color: white; margin-top: 25px; box-shadow: 1px 1px 1px;">
-    <div class="col-lg-8" style="margin-bottom: 65px; padding-left: 10%; padding-top: 25px; ">
+    <div class="container">
+    <div class="col-lg-8" style="margin-bottom: 65px; padding-left: 5%; padding-top: 25px; ">
         <h2 style="padding-bottom: 25px">Sejarah</h2>
         <p>
             Sejarah pengamatan meteorologi dan geofisika di Indonesia dimulai pada tahun 1841 diawali dengan pengamatan yang dilakukan secara perorangan oleh Dr. Onnen, Kepala Rumah Sakit di Bogor. Tahun demi tahun kegiatannya berkembang sesuai dengan semakin diperlukannya data hasil pengamatan cuaca dan geofisika.
