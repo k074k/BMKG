@@ -1,5 +1,5 @@
 <!--Judul-->
-<div class="container" style="margin-top: 70px">
+<div class="container" style=" background-color: white;margin-top: 70px">
     <div class="container" style="margin-left:45px;">
         <div class="row">
             <h3>Layanan Online</h3>
@@ -7,7 +7,7 @@
     </div>
 </div>
 <!--Tanggal dan Bulan-->
-<div class="col-lg-12" style="background-color: white; margin-top: 25px; box-shadow: 1px 1px 1px;">
+<div class="container" style="background-color: white; padding-top: 25px ">
   <div class="btn-group m-r-sm mail-hidden-options" style="display: inline-block;">
       <form action="#" method="post">
         <div class="btn-group">
@@ -25,37 +25,121 @@
             </a>
         </div>
         <div class="btn-group">
-            <input type="submit" style="height:54px" class="btn btn-default dropdown-toggle" aria-expanded="false" value="Search">
+            <input type="submit" style="height:50" class="btn btn-default dropdown-toggle" aria-expanded="false" value="Search">
             </a>
         </div>
     </div>
+    <!--Tabel-->
+    <div class="table-responsive" style="margin-top:25px;">
     </form>
-</div>
-<!--Tabel-->
-<div style="margin-top:25px;">
-    <table style="border:1px solid;">
-      <thead style="border:1px solid;">
-        <tr style="border:1px solid;">
-          <th style="border:1px solid;"rowspan="2">Jenis</th>
-          <th style="border:1px solid;"colspan="31">Bulan</th>
+    <table class="table">
+      <!--Table Head-->
+      <thead>
+        <tr>
+          <th rowspan="2">Jenis Data</th>
+          <th colspan="31">Bulan : Tahun</th>
         </tr>
-        <tr style="border:1px solid;">
+        <tr>
           <?php for($i = 1; $i <= 31; $i++)
           {?>
-            <th style="border:1px solid;"><?php echo $i?></th>
+            <th ><?php echo $i?></th>
           <?php }?>
         </tr>
       </thead>
-      <tbody style="border:1px solid;">
-        <tr style="border:1px solid;">
-          <td style="border:1px solid;">Data</td>
+      <!--Table Body-->
+      <tbody >
+        <!--Data Gempa-->
+        <tr>
+          <td>Data Gempa</td>
           <?php for($i = 1; $i <= 31; $i++)
           {?>
-            <th style="border:1px solid;">V</th>
+            <th ><span class="glyphicon glyphicon-ok-circle" style="font-size:14px;color:green"></span></th>
           <?php }?>
         </tr>
-
+        <!--Data Petir-->
+        <tr>
+          <td>Data Petir</td>
+          <?php for($i = 1; $i <= 31; $i++)
+          {?>
+            <th ><span class="glyphicon glyphicon-ok-circle" style="font-size:14px;color:green"></span></th>
+          <?php }?>
+        </tr>
+        <!--Data Angin-->
+        <tr>
+          <td>Data Angin</td>
+          <?php for($i = 1; $i <= 31; $i++)
+          {?>
+            <th ><span class="glyphicon glyphicon-ok-circle" style="font-size:14px;color:green"></span></th>
+          <?php }?>
+        </tr>
+        <!--Data Hari Hujan-->
+        <tr>
+          <td>Data Harian Hujan</td>
+          <?php for($i = 1; $i <= 31; $i++)
+          {?>
+            <th ><span class="glyphicon glyphicon-ok-circle" style="font-size:14px;color:green"></span></th>
+          <?php }?>
+        </tr>
+        <!--Data Suhu-->
+        <tr>
+          <td>Data Suhu</td>
+          <?php for($i = 1; $i <= 31; $i++)
+          {?>
+            <th ><span class="glyphicon glyphicon-ok-circle" style="font-size:14px;color:green"></span></th>
+          <?php }?>
+        </tr>
+        <!--Data Kelembapan-->
+        <tr>
+          <td>Data Kelembapan</td>
+          <?php for($i = 1; $i <= 31; $i++)
+          {?>
+            <th ><span class="glyphicon glyphicon-ok-circle" style="font-size:14px;color:green"></span></th>
+          <?php }?>
+        </tr>
+        <!--Lama Penyinaran-->
+        <tr>
+          <td>Lama penyinaran</td>
+          <?php for($i = 1; $i <= 31; $i++)
+          {?>
+            <th ><span class="glyphicon glyphicon-ok-circle" style="font-size:14px;color:green"></span></th>
+          <?php }?>
+        </tr>
+        <!--Arah/Kecepatan Angin-->
+        <tr>
+          <td>Arah/Kecepatan Angin</td>
+          <?php for($i = 1; $i <= 31; $i++)
+          {?>
+            <th ><span class="glyphicon glyphicon-ok-circle" style="font-size:14px;color:green"></span></th>
+          <?php }?>
+        </tr>
+        <!--Data Penguapan-->
+        <tr>
+          <td>Data Penguapan</td>
+          <?php for($i = 1; $i <= 31; $i++)
+          {?>
+            <th ><span class="glyphicon glyphicon-ok-circle" style="font-size:14px;color:green"></span></th>
+          <?php }?>
+        </tr>
+        <!--Data Curah Hujan-->
+        <tr>
+          <td>Data Curah Hujan</td>
+          <?php for($i = 1; $i <= 31; $i++)
+          {?>
+            <th ><span class="glyphicon glyphicon-ok-circle" style="font-size:14px;color:green"></span></th>
+          <?php }?>
+        </tr>
+        <!--Data Intensitas Hujan-->
+        <tr>
+          <td>Data Intensitas Hujan</td>
+          <?php for($i = 1; $i <= 31; $i++)
+          {?>
+            <th ><span class="glyphicon glyphicon-ok-circle" style="font-size:14px;color:green"></span></th>
+          <?php }?>
+        </tr>
       </tbody>
     </table>
 </div>
 </div>
+
+<!-- Koding icon Circle X -->
+<!-- <span class="glyphicon glyphicon-remove-circle" style="font-size:24px;"> -->
