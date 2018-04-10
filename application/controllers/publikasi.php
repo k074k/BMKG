@@ -20,11 +20,6 @@ class publikasi extends CI_Controller {
         $this->load->view('v_detailArtikel');
         $this->load->view('v_footer');
     }
-<<<<<<< HEAD
-
-=======
-    
->>>>>>> master
     public function layananOnline() {
         $this->load->view('v_header');
         $this->load->view('v_katalog');
