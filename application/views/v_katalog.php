@@ -7,6 +7,82 @@
     </div>
 </div>
 
+<div class="container" style="background-color: white;margin-top: 70px;margin-bottom:70px;">
+  <h3>Pemesanan Data</h3>
+  <table class="table">
+    <tr>
+      <td>
+        <form role="form">
+          <div class="form-group">
+            <select class="form-control">
+              <option>--Jenis Data--</option>
+              <option>Data Gempa</option>
+              <option>Data Petir</option>
+              <option>Data Angin</option>
+              <option>Data Harian Hujan</option>
+              <option>Data Suhu</option>
+              <option>Data Kelembapan</option>
+              <option>Lama penyinaran</option>
+              <option>Arah/Kecepatan Angin</option>
+              <option>Data Penguapan</option>
+              <option>Data Curah Hujan</option>
+              <option>Data Intensitas Hujan</option>
+            </select>
+          </div>
+        </form>
+      </td>
+      <td>
+        <form role="form">
+          <div class="form-group">
+            <input class="form-control" type="date" id="Mulai">
+          </div>
+        </form>
+      </td>
+      <td>
+        <form role="form">
+          <div class="form-group">
+            <input class="form-control" type="date" id="Akhir">
+          </div>
+        </form>
+      </td>
+      <td>
+        <form role="form">
+          <div class="form-group">
+            <input class="form-control" type="text" disabled="disabled" value="Rp.10000">
+          </div>
+        </form>
+      </td>
+      <td>
+        <form role="form">
+          <div class="form-group">
+            <span class="glyphicon glyphicon-remove-circle" style="font-size:24px;margin-top: 3%;">
+          </div>
+        </form>
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>
+        <h4>Total Harga: </h4>
+      </td>
+      <td>
+        <form role="form">
+          <div class="form-group">
+            <input class="form-control" type="text" disabled="disabled" value="Rp.10000">
+          </div>
+        </form>
+      </td>
+      <td>
+        <form role="form">
+        <div class="form-group">
+          <span class="glyphicon glyphicon-plus-sign" style="font-size:24px;margin-top: 3%;">
+        </div>
+        </form>
+      </td>
+    </tr>
+  </table>
+</div>
 <!--Tanggal dan Bulan-->
 <div class="container" style="background-color: white; margin-top: 25px;">
     <div class="container" style="padding-top: 25px; margin-bottom: 50px">
@@ -44,106 +120,6 @@
                         </select>
                     </div>
                 </form>
-            </div>
-            <div class="col-lg-1" style="margin-left: 53%;">
-                <form role="form">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Pemesanan</button>
-                  </div>
-                </form>
-            </div>
-
-            <!-- Modal -->
-            <div class="modal fade" id="myModal" role="dialog">
-              <div class="modal-dialog modal-lg" >
-                <!-- Modal content-->
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Form Permintaan Data Online</h4>
-                  </div>
-                  <div class="modal-body">
-                    <div>
-                      <table class="table">
-                        <tr>
-                          <td>
-                            <form role="form">
-                              <div class="form-group">
-                                <select class="form-control">
-                                  <option>--Jenis Data--</option>
-                                  <option>Data Gempa</option>
-                                  <option>Data Petir</option>
-                                  <option>Data Angin</option>
-                                  <option>Data Harian Hujan</option>
-                                  <option>Data Suhu</option>
-                                  <option>Data Kelembapan</option>
-                                  <option>Lama penyinaran</option>
-                                  <option>Arah/Kecepatan Angin</option>
-                                  <option>Data Penguapan</option>
-                                  <option>Data Curah Hujan</option>
-                                  <option>Data Intensitas Hujan</option>
-                                </select>
-                              </div>
-                            </form>
-                          </td>
-                          <td>
-                            <form role="form">
-                              <div class="form-group">
-                                <input class="form-control" type="date" id="Mulai">
-                              </div>
-                            </form>
-                          </td>
-                          <td>
-                            <form role="form">
-                              <div class="form-group">
-                                <input class="form-control" type="date" id="Akhir">
-                              </div>
-                            </form>
-                          </td>
-                          <td>
-                            <form role="form">
-                              <div class="form-group">
-                                <input class="form-control" type="text" disabled="disabled" value="Rp.10000">
-                              </div>
-                            </form>
-                          </td>
-                          <td>
-                            <form role="form">
-                              <div class="form-group">
-                                <span class="glyphicon glyphicon-remove-circle" style="font-size:24px;margin-top: 3%;">
-                              </div>
-                            </form>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td></td>
-                          <td></td>
-                          <td>
-                            <h4>Total Harga: </h4>
-                          </td>
-                          <td>
-                            <form role="form">
-                              <div class="form-group">
-                                <input class="form-control" type="text" disabled="disabled" value="Rp.10000">
-                              </div>
-                            </form>
-                          </td>
-                          <td>
-                            <form role="form">
-                            <div class="form-group">
-                              <span class="glyphicon glyphicon-plus-sign" style="font-size:24px;margin-top: 3%;">
-                            </div>
-                            </form>
-                          </td>
-                        </tr>
-                      </table>
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <a type="submit" class="btn btn-default" href="<?php echo base_url('publikasi/pemesanan')?>">Lanjutkan</a>
-                  </div>
-                </div>
-              </div>
             </div>
 
             <table class="table table-striped" style="width: 100%;">
