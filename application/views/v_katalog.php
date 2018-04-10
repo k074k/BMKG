@@ -7,7 +7,7 @@
     </div>
 </div>
 <!--Tanggal dan Bulan-->
-<div class="container" style="background-color: white; padding-top: 25px ">
+<div class="container" style="background-color: white; padding-top: 25px;">
   <div class="btn-group m-r-sm mail-hidden-options" style="display: inline-block;">
       <form action="#" method="post">
         <div class="btn-group">
@@ -26,7 +26,6 @@
         </div>
         <div class="btn-group">
             <input type="submit" style="height:50" class="btn btn-default dropdown-toggle" aria-expanded="false" value="Search">
-            </a>
         </div>
     </div>
     <!--Tabel-->
@@ -140,6 +139,86 @@
     </table>
 </div>
 </div>
-
 <!-- Koding icon Circle X -->
 <!-- <span class="glyphicon glyphicon-remove-circle" style="font-size:24px;"> -->
+<!-- Pilih Data -->
+<div class="container" style="background-color: white; padding-top: 25px;margin-bottom: 75px;">
+  <h2>Form Permintaan Data Online</h2>
+  <div class="col-lg-12" style="padding-top: 25px;">
+    <div class="col-lg-2">
+      <form role="form">
+        <div class="form-group">
+          <select class="form-control">
+            <option>--Jenis Data--</option>
+            <option>Data Gempa</option>
+            <option>Data Petir</option>
+            <option>Data Angin</option>
+            <option>Data Harian Hujan</option>
+            <option>Data Suhu</option>
+            <option>Data Kelembapan</option>
+            <option>Lama penyinaran</option>
+            <option>Arah/Kecepatan Angin</option>
+            <option>Data Penguapan</option>
+            <option>Data Curah Hujan</option>
+            <option>Data Intensitas Hujan</option>
+          </select>
+        </div>
+      </form>
+    </div>
+    <div class="col-lg-2">
+      <form role="form">
+        <div class="form-group">
+          <select class="form-control">
+            <option>--Mulai Hari--</option>
+          </select>
+        </div>
+      </form>
+    </div>
+    <div class="col-lg-2">
+      <form role="form">
+        <div class="form-group">
+          <select class="form-control">
+            <option>--Sampai Hari--</option>
+          </select>
+        </div>
+      </form>
+    </div>
+    <div class="col-lg-2">
+      <form role="form">
+        <div class="form-group">
+          <input class="form-control" type="text" disabled="disabled" value="Rp.10000">
+        </div>
+      </form>
+    </div>
+    <div class="col-lg-2">
+      <form role="form">
+        <div class="form-group">
+          <span class="glyphicon glyphicon-remove-circle" style="font-size:24px;">
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="col-lg-12" style="padding-top: 25px;">
+    <div class="col-lg-6">
+      <form role="form">
+        <div class="form-group">
+          <span class="glyphicon glyphicon-plus-sign" style="font-size:24px;margin-left:50%;">
+        </div>
+      </form>
+    </div>
+    <div class="col-lg-2">
+      <form role="form">
+        <div class="form-group">
+          <input class="form-control" type="text" disabled="disabled" value="Rp.10000">
+        </div>
+      </form>
+    </div>
+    <div class="col-lg-2">
+      <form role="form">
+        <div class="btn-group">
+          <a type="submit" style="height:50" class="btn btn-default dropdown-toggle" aria-expanded="false" href="<?php echo base_url('publikasi/pemesanan');?>">Lanjutkan</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
