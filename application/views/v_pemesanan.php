@@ -17,7 +17,7 @@
         <td>
           <form role="form">
             <div class="form-group">
-              <input class="form-control" type="text" disabled="disabled" value="Mulai Tanggal">
+              <input class="form-control" type="text" disabled="disabled" value="Tanggal Mulai">
             </div>
           </form>
         </td>
@@ -54,7 +54,7 @@
   </div>
 </div>
 
-<div class="container" style=" background-color: white;margin-top: 70px">
+<div class="container" style=" background-color: white;margin-top: 70px; margin-bottom:70px;">
     <div class="container">
         <div class="row">
             <h3 style="text-align:center;">From Pemesanan Data</h3>
@@ -83,7 +83,7 @@
         <div class="form-group">
           <div class="radio">
             <label><input type="radio" name="optradio">Komersial</label>
-            <label><input type="radio" name="optradio">Non Komersial</label>
+            <label  style="margin-left:20px;"><input type="radio" name="optradio">Non Komersial</label>
           </div>
         </div>
         <div class="form-group">
@@ -91,6 +91,9 @@
         </div>
         <div class="form-group">
           <input type="text" class="form-control" id="tlp" placeholder="Captha">
+        </div>
+        <div class="form-group">
+          <a type="submit" class="btn btn-primary">Cetak</a>
         </div>
       </form>
     </div>

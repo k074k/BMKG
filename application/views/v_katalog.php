@@ -6,10 +6,17 @@
         </div>
     </div>
 </div>
-
+<!-- Pilih Data -->
 <div class="container" style="background-color: white;margin-top: 70px;margin-bottom:70px;">
   <h3>Pemesanan Data</h3>
   <table class="table">
+    <tr>
+      <td style="text-align:center;">Jenis Data</td>
+      <td style="text-align:center;">Tanggal Mulai</td>
+      <td style="text-align:center;">Sampai Tanggal</td>
+      <td style="text-align:center;">Harga</td>
+      <td></td>
+    </tr>
     <tr>
       <td>
         <form role="form">
@@ -34,14 +41,14 @@
       <td>
         <form role="form">
           <div class="form-group">
-            <input class="form-control" type="date" id="Mulai">
+            <input class="form-control" type="date" value="Mulai" id="Mulai">
           </div>
         </form>
       </td>
       <td>
         <form role="form">
           <div class="form-group">
-            <input class="form-control" type="date" id="Akhir">
+            <input class="form-control" type="date" value="Akhir" id="Akhir">
           </div>
         </form>
       </td>
@@ -265,4 +272,3 @@
 </div>
 <!-- Koding icon Circle X -->
 <!-- <span class="glyphicon glyphicon-remove-circle" style="font-size:24px;"> -->
-<!-- Pilih Data -->
