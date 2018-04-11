@@ -11,7 +11,7 @@
     <div class="col-lg-12" style="margin-bottom: 65px; margin-top: 3%">
         <div class="col-lg-3">
             <form role="form">
-                <div class="form-group"> 
+                <div class="form-group">
                     <select class="form-control">
                         <option>---- Pilih Tahun ----</option>
                         <option>2015</option>
@@ -27,18 +27,18 @@
         <div id="grafik3" style="margin-top: 5%"></div>
         <div id="grafik4" style="margin-top: 5%"></div>
         <div id="grafik5" style="margin-top: 5%; margin-bottom: 5%"></div>
-        
+
         <script type="text/javascript">
             Highcharts.chart('grafik', {
                 title: {
-                    text: 'Solar Employment Growth by Sector, 2010-2016'
+                    text: 'GRAFIK PERBANDINGAN TEKANAN UDARA TAHUN 2018 TERHADAP RATA-RATA 22 TAHUN'
                 },
                 subtitle: {
-                    text: 'Source: thesolarfoundation.com'
+                    text: 'Stasiun Geofisika Sanglah'
                 },
                 yAxis: {
                     title: {
-                        text: 'Number of Employees'
+                        text: 'Tekanan Udara(mb)'
                     }
                 },
                 legend: {
@@ -54,7 +54,7 @@
                         pointStart: 2010
                     }
                 },
-                
+
                 series: [{
                     name: 'Installation',
                     data: [43934, 52503, 57177, 69658, 97031, 119931, 137133, 154175]
@@ -71,7 +71,7 @@
                     name: 'Other',
                     data: [12908, 5948, 8105, 11248, 8989, 11816, 18274, 18111]
                 }],
-                
+
                 responsive: {
                     rules: [{
                         condition: {
@@ -88,18 +88,18 @@
                 }
             });
 		</script>
-        
+
         <script type="text/javascript">
             Highcharts.chart('grafik2', {
                 title: {
-                    text: 'Solar Employment Growth by Sector, 2010-2016'
+                    text: 'GRAFIK PERBANDINGAN TEKANAN UDARA MAXIMUM ABSOLUT TAHUN 2018 TERHADAP RATA-RATANYA'
                 },
                 subtitle: {
-                    text: 'Source: thesolarfoundation.com'
+                    text: 'Stasiun Geofisika Sanglah'
                 },
                 yAxis: {
                     title: {
-                        text: 'Number of Employees'
+                        text: 'Tekanan Udara(mb)'
                     }
                 },
                 legend: {
@@ -115,7 +115,7 @@
                         pointStart: 2010
                     }
                 },
-                
+
                 series: [{
                     name: 'Installation',
                     data: [43934, 52503, 57177, 69658, 97031, 119931, 137133, 154175]
@@ -132,7 +132,7 @@
                     name: 'Other',
                     data: [12908, 5948, 8105, 11248, 8989, 11816, 18274, 18111]
                 }],
-                
+
                 responsive: {
                     rules: [{
                         condition: {
@@ -149,18 +149,18 @@
                 }
             });
 		</script>
-        
+
         <script type="text/javascript">
             Highcharts.chart('grafik3', {
                 title: {
-                    text: 'Solar Employment Growth by Sector, 2010-2016'
+                    text: 'GRAFIK PERBANDINGAN TEKANAN UDARA MAXIMUM RATA-RATA TAHUN 2018 TERHADAP RATA-RATANYA'
                 },
                 subtitle: {
-                    text: 'Source: thesolarfoundation.com'
+                    text: 'Stasiun Geofisika Sanglah'
                 },
                 yAxis: {
                     title: {
-                        text: 'Number of Employees'
+                        text: 'Tekanan Udara(mb)'
                     }
                 },
                 legend: {
@@ -176,7 +176,7 @@
                         pointStart: 2010
                     }
                 },
-                
+
                 series: [{
                     name: 'Installation',
                     data: [43934, 52503, 57177, 69658, 97031, 119931, 137133, 154175]
@@ -193,7 +193,7 @@
                     name: 'Other',
                     data: [12908, 5948, 8105, 11248, 8989, 11816, 18274, 18111]
                 }],
-                
+
                 responsive: {
                     rules: [{
                         condition: {
@@ -210,18 +210,18 @@
                 }
             });
 		</script>
-        
+
         <script type="text/javascript">
             Highcharts.chart('grafik4', {
                 title: {
-                    text: 'Solar Employment Growth by Sector, 2010-2016'
+                    text: 'GRAFIK PERBANDINGAN TEKANAN UDARA MINIMUM ABSOLUT TAHUN 2018 TERHADAP RATA-RATANYA'
                 },
                 subtitle: {
-                    text: 'Source: thesolarfoundation.com'
+                    text: 'Stasiun Geofisika Sanglah'
                 },
                 yAxis: {
                     title: {
-                        text: 'Number of Employees'
+                        text: 'Tekanan Udara(mb)'
                     }
                 },
                 legend: {
@@ -237,7 +237,7 @@
                         pointStart: 2010
                     }
                 },
-                
+
                 series: [{
                     name: 'Installation',
                     data: [43934, 52503, 57177, 69658, 97031, 119931, 137133, 154175]
@@ -254,7 +254,7 @@
                     name: 'Other',
                     data: [12908, 5948, 8105, 11248, 8989, 11816, 18274, 18111]
                 }],
-                
+
                 responsive: {
                     rules: [{
                         condition: {
@@ -271,18 +271,18 @@
                 }
             });
 		</script>
-        
+
         <script type="text/javascript">
             Highcharts.chart('grafik5', {
                 title: {
-                    text: 'Solar Employment Growth by Sector, 2010-2016'
+                    text: 'GRAFIK PERBANDINGAN TEKANAN UDARA MINIMUM RATA-RATA TAHUN 2018 TERHADAP RATA-RATANYA'
                 },
                 subtitle: {
-                    text: 'Source: thesolarfoundation.com'
+                    text: 'Stasiun Geofisika Sanglah'
                 },
                 yAxis: {
                     title: {
-                        text: 'Number of Employees'
+                        text: 'Tekanan Udara(mb)'
                     }
                 },
                 legend: {
@@ -298,7 +298,7 @@
                         pointStart: 2010
                     }
                 },
-                
+
                 series: [{
                     name: 'Installation',
                     data: [43934, 52503, 57177, 69658, 97031, 119931, 137133, 154175]
@@ -315,7 +315,7 @@
                     name: 'Other',
                     data: [12908, 5948, 8105, 11248, 8989, 11816, 18274, 18111]
                 }],
-                
+
                 responsive: {
                     rules: [{
                         condition: {

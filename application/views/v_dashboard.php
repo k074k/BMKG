@@ -23,7 +23,7 @@
                 </div>
             </div>
             <!--//Tabel Kiri -->
-            
+
             <!--Tabel Kanan -->
             <div class="col-lg-8">
                 <ul class="nav nav-tabs" style="margin-top: 25px">

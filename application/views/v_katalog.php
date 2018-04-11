@@ -41,14 +41,14 @@
       <td>
         <form role="form">
           <div class="form-group">
-            <input class="form-control" type="date" value="Mulai" id="Mulai">
+            <input class="form-control" type="date" id="Mulai">
           </div>
         </form>
       </td>
       <td>
         <form role="form">
           <div class="form-group">
-            <input class="form-control" type="date" value="Akhir" id="Akhir">
+            <input class="form-control" type="date" id="Akhir">
           </div>
         </form>
       </td>
