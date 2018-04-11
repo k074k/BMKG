@@ -55,7 +55,7 @@
       <td>
         <form role="form">
           <div class="form-group">
-            <span class="glyphicon glyphicon-remove-circle" style="font-size:24px;margin-top: 3%;">
+            <span class="glyphicon glyphicon-remove-circle" style="font-size:24px;margin-top: 3%;margin-left:20%;">
           </div>
         </form>
       </td>
@@ -64,7 +64,7 @@
       <td></td>
       <td></td>
       <td>
-        <h4>Total Harga: </h4>
+        <h4 style="text-align:end;">Total Harga: </h4>
       </td>
       <td>
         <form role="form">
@@ -76,7 +76,20 @@
       <td>
         <form role="form">
         <div class="form-group">
-          <span class="glyphicon glyphicon-plus-sign" style="font-size:24px;margin-top: 3%;">
+          <span class="glyphicon glyphicon-plus-sign" style="font-size:24px;margin-top: 3%;margin-left:20%;">
+        </div>
+        </form>
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>
+        <form role="form">
+        <div class="form-group">
+          <a style="margin-left:;" type="button" class="btn btn-primary" href="<?php echo base_url('publikasi/pemesanan') ?>">Lanjutkan</a>
         </div>
         </form>
       </td>
@@ -120,6 +133,13 @@
                         </select>
                     </div>
                 </form>
+            </div>
+            <div class="col-lg-2">
+              <form role="form">
+              <div class="form-group">
+                <a type="button" class="btn btn-primary" href=" ">Search</a>
+              </div>
+              </form>
             </div>
 
             <table class="table table-striped" style="width: 100%;">

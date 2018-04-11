@@ -1,4 +1,59 @@
-<!--Judul-->
+<div class="container" style=" background-color: white;margin-top: 70px">
+  <div class="container">
+      <div class="row">
+          <h3 style="text-align:center;">Pesanan Dipilih</h3>
+      </div>
+  </div>
+  <div class="col-lg-8" style="padding-top: 25px;margin-left:17%;" >
+    <table class="table">
+      <tr>
+        <td>
+          <form role="form">
+            <div class="form-group">
+              <input class="form-control" type="text" disabled="disabled" value="Jenis Data">
+            </div>
+          </form>
+        </td>
+        <td>
+          <form role="form">
+            <div class="form-group">
+              <input class="form-control" type="text" disabled="disabled" value="Mulai Tanggal">
+            </div>
+          </form>
+        </td>
+        <td>
+          <form role="form">
+            <div class="form-group">
+              <input class="form-control" type="text" disabled="disabled" value="Sampai Tanggal">
+            </div>
+          </form>
+        </td>
+        <td>
+          <form role="form">
+            <div class="form-group">
+              <input class="form-control" type="text" disabled="disabled" value="Rp.10000">
+            </div>
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td>
+          <h4 style="text-align:end;">Total Harga: </h4>
+        </td>
+        <td>
+          <form role="form">
+            <div class="form-group">
+              <input class="form-control" type="text" disabled="disabled" value="Rp.10000">
+            </div>
+          </form>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
 <div class="container" style=" background-color: white;margin-top: 70px">
     <div class="container">
         <div class="row">
