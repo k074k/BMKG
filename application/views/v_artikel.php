@@ -12,7 +12,7 @@
             <div class="row">
                 <div class="col-lg-3">
                     <form role="form">
-                        <div class="form-group"> 
+                        <div class="form-group">
                             <select class="form-control">
                                 <option>---- Pilih Tahun ----</option>
                                 <option>2015</option>
@@ -25,7 +25,7 @@
                 </div>
                 <div class="col-lg-9">
                     <form role="form">
-                        <div class="form-group input-group"> 
+                        <div class="form-group input-group">
                             <input type="text" class="form-control" placeholder="Kata Kunci . . . . . . .">
                             <span class="input-group-btn">
                                 <button class="btn btn-default" type="button">
@@ -54,16 +54,14 @@
                             salah satu bentuk pelayanan informasi kepada masyarakat Provinsi Bali pada umumnya dan kota Denpasar khususnya mengenai kondisi dinamika geofisika, meteorologi, klimatologi dan kualitas udara.
                         </p>
                         <p>
-                            Buletin ini berisi tentang pengetahuan dan ulasan gempabumi, percepatan tanah, kelistrikan udara Pulau Bali, dinamika iklim Kota Denpasar, almanak tanda waktu kota Denpasar dan prakiraan musim hujan provinsi Bali. 
+                            Buletin ini berisi tentang pengetahuan dan ulasan gempabumi, percepatan tanah, kelistrikan udara Pulau Bali, dinamika iklim Kota Denpasar, almanak tanda waktu kota Denpasar dan prakiraan musim hujan provinsi Bali.
                         </p>
                         <p>
                             Hasilnya disampaikan dalam bentuk informasi, tabulasi, diagram, peta dan data yang sifatnya saling melengkapi.
                         </p>
                         <hr>
                         <div class="form-group ">
-                            <button type="button" class="btn btn-primary" >
-                                <a href="<?php echo base_url('publikasi/detailArtikel') ?>">View Details</a>
-                            </button>
+                                <a type="button" class="btn btn-default"  href="<?php echo base_url('publikasi/detailArtikel') ?>">View Details</a>
                         </div>
                     </div>
                 </div>
