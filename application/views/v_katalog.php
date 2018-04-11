@@ -137,7 +137,7 @@
             <div class="col-lg-2">
               <form role="form">
               <div class="form-group">
-                <a type="button" class="btn btn-primary" href=" ">Search</a>
+                <a type="button" class="btn btn-default" href=" ">Search</a>
               </div>
               </form>
             </div>
