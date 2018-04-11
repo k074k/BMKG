@@ -44,4 +44,6 @@ class Meteorologi extends CI_Controller {
         $this->load->view('v_penyinaran');
         $this->load->view('v_footer');
     }
+    
+    
 }
