@@ -87,10 +87,11 @@
           </div>
         </div>
         <div class="form-group">
-          <input type="file" class="form-control" id="tlp" >
+          <button class="btn btn-default" onclick="document.getElementById('file').click()">Chose PDF file (Max 4Mb)</button>
+          <input type="file" id="file" style="display:none">
         </div>
         <div class="form-group">
-          <input type="text" class="form-control" id="tlp" placeholder="Captha">
+          <input type="text" class="form-control" id="captha" placeholder="Captha">
         </div>
         <div class="form-group">
           <a type="submit" class="btn btn-primary">Cetak</a>
