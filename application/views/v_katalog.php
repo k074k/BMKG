@@ -7,102 +7,310 @@
     </div>
 </div>
 <!-- Pilih Data -->
-<div class="container" style="background-color: white;margin-top: 70px;margin-bottom:70px;">
-  <h3>Pemesanan Data</h3>
-  <table class="table">
-    <tr>
-      <td style="text-align:center;">Jenis Data</td>
-      <td style="text-align:center;">Tanggal Mulai</td>
-      <td style="text-align:center;">Sampai Tanggal</td>
-      <td style="text-align:center;">Harga</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>
-        <form role="form">
-          <div class="form-group">
-            <select class="form-control">
-              <option>--Jenis Data--</option>
-              <option>Data Gempa</option>
-              <option>Data Petir</option>
-              <option>Data Angin</option>
-              <option>Data Harian Hujan</option>
-              <option>Data Suhu</option>
-              <option>Data Kelembapan</option>
-              <option>Lama penyinaran</option>
-              <option>Arah/Kecepatan Angin</option>
-              <option>Data Penguapan</option>
-              <option>Data Curah Hujan</option>
-              <option>Data Intensitas Hujan</option>
-            </select>
-          </div>
-        </form>
-      </td>
-      <td>
-        <form role="form">
-          <div class="form-group">
-            <input class="form-control" type="date" id="Mulai">
-          </div>
-        </form>
-      </td>
-      <td>
-        <form role="form">
-          <div class="form-group">
-            <input class="form-control" type="date" id="Akhir">
-          </div>
-        </form>
-      </td>
-      <td>
-        <form role="form">
-          <div class="form-group">
-            <input class="form-control" type="text" disabled="disabled" value="Rp.10000">
-          </div>
-        </form>
-      </td>
-      <td>
-        <form role="form">
-          <div class="form-group">
-            <span class="glyphicon glyphicon-remove-circle" style="font-size:24px;margin-top: 3%;margin-left:20%;">
-          </div>
-        </form>
-      </td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>
-        <h4 style="text-align:end;">Total Harga: </h4>
-      </td>
-      <td>
-        <form role="form">
-          <div class="form-group">
-            <input class="form-control" type="text" disabled="disabled" value="Rp.10000">
-          </div>
-        </form>
-      </td>
-      <td>
-        <form role="form">
-        <div class="form-group">
-          <span class="glyphicon glyphicon-plus-sign" style="font-size:24px;margin-top: 3%;margin-left:20%;">
+<div class="container" style="background-color: white;margin-top: 2%; margin-bottom:70px;">
+    <h3>Pemesanan Data</h3>
+    <div class="col-lg-12" style="margin-bottom: 1%">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#hari" data-toggle="tab">Data Harian</a></li>
+            <li><a href="#bulan" data-toggle="tab">Data Bulanan</a></li>
+            <li><a href="#tahun" data-toggle="tab">Data Tahunan</a></li>
+        </ul>
+    </div>
+    <div class="tab-content">
+        <div id="hari" class="tab-pane fade in active">
+            <div class="col-lg-12" style="margin-bottom: 1%" >
+                <table class="table">
+                    <tr>
+                        <td style="text-align:center;">Jenis Data</td>
+                        <td style="text-align:center;">Tanggal Mulai</td>
+                        <td style="text-align:center;">Sampai Tanggal</td>
+                        <td style="text-align:center;">Harga</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <form role="form">
+                                <div class="form-group">
+                                    <select class="form-control">
+                                        <option>--Jenis Data--</option>
+                                        <option>Data Gempa</option>
+                                        <option>Data Petir</option>
+                                        <option>Data Angin</option>
+                                        <option>Data Harian Hujan</option>
+                                        <option>Data Suhu</option>
+                                        <option>Data Kelembapan</option>
+                                        <option>Lama penyinaran</option>
+                                        <option>Arah/Kecepatan Angin</option>
+                                        <option>Data Penguapan</option>
+                                        <option>Data Curah Hujan</option>
+                                        <option>Data Intensitas Hujan</option>
+                                    </select>
+                                </div>
+                            </form>
+                        </td>
+                        <td>
+                            <form role="form">
+                                <div class="form-group">
+                                    <input class="form-control" type="date" id="Mulai">
+                                </div>
+                            </form>
+                        </td>
+                        <td>
+                            <form role="form">
+                                <div class="form-group">
+                                    <input class="form-control" type="date" id="Akhir">
+                                </div>
+                            </form>
+                        </td>
+                        <td>
+                            <form role="form">
+                                <div class="form-group">
+                                    <input class="form-control" type="text" disabled="disabled" value="Rp.10000">
+                                </div>
+                            </form>
+                        </td>
+                        <td>
+                            <form role="form">
+                                <div class="form-group">
+                                    <input name="chk" type="checkbox" />
+                                </div>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <h4 style="text-align:end;">Total Harga: </h4>
+                        </td>
+                        <td>
+                            <form role="form">
+                                <div class="form-group">
+                                    <input class="form-control" type="text" disabled="disabled" value="Rp.10000">
+                                </div>
+                            </form>
+                        </td>
+                        <td>
+                            <form role="form">
+                                <div class="form-group">
+                                    <span class="glyphicon glyphicon-plus-sign" style="font-size:24px;margin-top: 3%;margin-left:20%;">
+                                </div>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <form role="form">
+                                <div class="form-group">
+                                    <a style="margin-left:;" type="button" class="btn btn-primary" href="<?php echo base_url('publikasi/pemesanan') ?>">Lanjutkan</a>
+                                </div>
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </div>
-        </form>
-      </td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>
-        <form role="form">
-        <div class="form-group">
-          <a style="margin-left:;" type="button" class="btn btn-primary" href="<?php echo base_url('publikasi/pemesanan') ?>">Lanjutkan</a>
+        <div id="bulan" class="tab-pane fade">
+            <div class="col-lg-12" style="margin-bottom: 1%" >
+                <table class="table">
+                    <tr>
+                        <td style="text-align:center;">Jenis Data</td>
+                        <td style="text-align:center;">Tanggal Mulai</td>
+                        <td style="text-align:center;">Sampai Tanggal</td>
+                        <td style="text-align:center;">Harga</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <form role="form">
+                                <div class="form-group">
+                                    <select class="form-control">
+                                        <option>--Jenis Data--</option>
+                                        <option>Data Gempa</option>
+                                        <option>Data Petir</option>
+                                        <option>Data Angin</option>
+                                        <option>Data Harian Hujan</option>
+                                        <option>Data Suhu</option>
+                                        <option>Data Kelembapan</option>
+                                        <option>Lama penyinaran</option>
+                                        <option>Arah/Kecepatan Angin</option>
+                                        <option>Data Penguapan</option>
+                                        <option>Data Curah Hujan</option>
+                                        <option>Data Intensitas Hujan</option>
+                                    </select>
+                                </div>
+                            </form>
+                        </td>
+                        <td>
+                            <form role="form">
+                                <div class="form-group">
+                                    <input class="form-control" type="date" id="Mulai">
+                                </div>
+                            </form>
+                        </td>
+                        <td>
+                            <form role="form">
+                                <div class="form-group">
+                                    <input class="form-control" type="date" id="Akhir">
+                                </div>
+                            </form>
+                        </td>
+                        <td>
+                            <form role="form">
+                                <div class="form-group">
+                                    <input class="form-control" type="text" disabled="disabled" value="Rp.10000">
+                                </div>
+                            </form>
+                        </td>
+                        <td>
+                            <form role="form">
+                                <div class="form-group">
+                                    <span class="glyphicon glyphicon-remove-circle" style="font-size:24px;margin-top: 3%;margin-left:20%;">
+                                </div>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <h4 style="text-align:end;">Total Harga: </h4>
+                        </td>
+                        <td>
+                            <form role="form">
+                                <div class="form-group">
+                                    <input class="form-control" type="text" disabled="disabled" value="Rp.10000">
+                                </div>
+                            </form>
+                        </td>
+                        <td>
+                            <form role="form">
+                                <div class="form-group">
+                                    <span class="glyphicon glyphicon-plus-sign" style="font-size:24px;margin-top: 3%;margin-left:20%;">
+                                </div>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <form role="form">
+                                <div class="form-group">
+                                    <a style="margin-left:;" type="button" class="btn btn-primary" href="<?php echo base_url('publikasi/pemesanan') ?>">Lanjutkan</a>
+                                </div>
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </div>
-        </form>
-      </td>
-    </tr>
-  </table>
+        <div id="tahun" class="tab-pane fade">
+            <div class="col-lg-12" style="margin-bottom: 1%" >
+                <table class="table">
+                    <tr>
+                        <td style="text-align:center;">Jenis Data</td>
+                        <td style="text-align:center;">Tanggal Mulai</td>
+                        <td style="text-align:center;">Sampai Tanggal</td>
+                        <td style="text-align:center;">Harga</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <form role="form">
+                                <div class="form-group">
+                                    <select class="form-control">
+                                        <option>--Jenis Data--</option>
+                                        <option>Data Gempa</option>
+                                        <option>Data Petir</option>
+                                        <option>Data Angin</option>
+                                        <option>Data Harian Hujan</option>
+                                        <option>Data Suhu</option>
+                                        <option>Data Kelembapan</option>
+                                        <option>Lama penyinaran</option>
+                                        <option>Arah/Kecepatan Angin</option>
+                                        <option>Data Penguapan</option>
+                                        <option>Data Curah Hujan</option>
+                                        <option>Data Intensitas Hujan</option>
+                                    </select>
+                                </div>
+                            </form>
+                        </td>
+                        <td>
+                            <form role="form">
+                                <div class="form-group">
+                                    <input class="form-control" type="date" id="Mulai">
+                                </div>
+                            </form>
+                        </td>
+                        <td>
+                            <form role="form">
+                                <div class="form-group">
+                                    <input class="form-control" type="date" id="Akhir">
+                                </div>
+                            </form>
+                        </td>
+                        <td>
+                            <form role="form">
+                                <div class="form-group">
+                                    <input class="form-control" type="text" disabled="disabled" value="Rp.10000">
+                                </div>
+                            </form>
+                        </td>
+                        <td>
+                            <form role="form">
+                                <div class="form-group">
+                                    <span class="glyphicon glyphicon-remove-circle" style="font-size:24px;margin-top: 3%;margin-left:20%;">
+                                </div>
+                            </form> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <h4 style="text-align:end;">Total Harga: </h4>
+                        </td>
+                        <td>
+                            <form role="form">
+                                <div class="form-group">
+                                    <input class="form-control" type="text" disabled="disabled" value="Rp.10000">
+                                </div>
+                            </form>
+                        </td>
+                        <td>
+                            <form role="form">
+                                <div class="form-group">
+                                    <span class="glyphicon glyphicon-plus-sign" style="font-size:24px;margin-top: 3%;margin-left:20%;">
+                                </div>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <form role="form">
+                                <div class="form-group">
+                                    <a style="margin-left:;" type="button" class="btn btn-primary" href="<?php echo base_url('publikasi/pemesanan') ?>">Lanjutkan</a>
+                                </div>
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
 </div>
+
 <!--Tanggal dan Bulan-->
 <div class="container" style="background-color: white; margin-top: 25px;">
     <div class="container" style="padding-top: 25px; margin-bottom: 50px">
@@ -272,3 +480,5 @@
 </div>
 <!-- Koding icon Circle X -->
 <!-- <span class="glyphicon glyphicon-remove-circle" style="font-size:24px;"> -->
+
+
