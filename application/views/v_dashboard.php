@@ -29,14 +29,23 @@
                 <ul class="nav nav-tabs" style="margin-top: 25px">
                     <li class="active" style="font-size: 12px; font-weight: bold"><a>Peta Gempabumi</a></li>
                 </ul>
-                <div id="map" style="margin-top:10px; height: 400px; box-shadow: 1px 1px 3px grey; padding: 0px 0px 0px 0px" class="col-lg-12">
                   <!--Maps-->
+                  <?php $m=date("m");?>
                   <script>
                     var citymap = {
-                      chicago: {
-                        center: {lat: -8.650000, lng: 115.216667},
-                        population: 563300
-                      }
+                      <?php foreach($tb_gempa as $t) {?>
+                        req<?php echo $t->IDGempa  ?>: {
+                          center: {lat: <?php echo $t->Lintang ?>, lng: <?php echo $t->Bujur ?>},
+                            <?php if ($t->Magnitude<=3) {
+                              $p=10000;
+                            }elseif ($t->Magnitude<=6) {
+                              $p=25000;
+                            }elseif ($t->Magnitude>6) {
+                              $p=50000;
+                            }?>
+                          population:<?php echo $p ?>
+                        },
+                      <?php }?>
                     };
 
                     function initMap() {
@@ -52,8 +61,15 @@
                           strokeColor: '#FF0000',
                           strokeOpacity: 0.1,
                           strokeWeight: 2,
-                          fillColor: '#FF0000',
-                          fillOpacity: 0.35,
+                          <?php if ($t->Magnitude>=300){
+                            $c='#00FF00';
+                          } elseif ($t->Magnitude>60||$t->Magnitude<300) {
+                            $c='#FFFF00';
+                          }elseif ($t->Magnitude<60) {
+                            $c= '#FF0000';
+                          }?>
+                          fillColor:'<?php echo $c?>',
+                          fillOpacity: 0.5,
                           map: map,
                           center: citymap[city].center,
                           radius: Math.sqrt(citymap[city].population) * 100
@@ -61,10 +77,8 @@
                       }
                     }
                   </script>
-                  <script async defer
-                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcZJ8zBcGKVDzLH2fcwflexue9ZoiIoCY&callback=initMap">
-                  </script>
-                </div>
+                  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcZJ8zBcGKVDzLH2fcwflexue9ZoiIoCY&callback=initMap"></script>
+                  <div id="map" style="margin-top:10px; height: 400px; box-shadow: 1px 1px 3px grey; padding: 0px 0px 0px 0px" class="col-lg-12"></div>
             </div>
             <!--//Tabel Kanan -->
         </div>
