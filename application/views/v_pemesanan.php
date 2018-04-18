@@ -82,11 +82,11 @@
         </div>
         <div class="form-group">
           <div class="radio">
-            <label><input type="radio" name="optradio">Komersial</label>
-            <label  style="margin-left:20px;"><input type="radio" name="optradio">Non Komersial</label>
+            <label><input type="radio" name="optradio" value="komersil" class="detail">Komersial</label>
+            <label  style="margin-left:20px;"><input type="radio" name="optradio" class="detail" value="nonkomersil">Non Komersial</label>
           </div>
         </div>
-        <div class="form-group">
+        <div class="form-group" id="form-input">
           <button class="btn btn-default" onclick="document.getElementById('file').click()">Chose PDF file (Max 4Mb)</button>
           <input type="file" id="file" style="display:none">
         </div>
@@ -99,3 +99,17 @@
       </form>
     </div>
 </div>
+
+
+<script>
+$(document).ready(function(){
+    $("#form-input").css("display","none"); //Menghilangkan form-input ketika pertama kali dijalankan
+    $(".detail").click(function(){ //Memberikan even ketika class detail di klik (class detail ialah class radio button)
+        if ($("input[name='optradio']:checked").val() != "nonkomersil" ) { //Jika radio button "berbeda" dipilih maka tampilkan form-inputan
+            $("#form-input").slideUp("fast"); //Efek Slide Up (Menghilangan Form Input)
+        } else {
+            $("#form-input").slideDown("fast"); //Efek Slide Down (Menampilkan Form Input)
+        }
+    });
+});
+</script>
