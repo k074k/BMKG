@@ -59,8 +59,9 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right" style="font-size: 12px; font-weight: bold;">
                         <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">PROFILE<span class="sr-only">(current)</span>
-                            <span class="caret"></span></a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">PROFILE<span class="sr-only">(current)</span>
+                                <span class="caret"></span>
+                            </a>
                             <ul class="dropdown-menu" style="font-size: 14px">
                                 <li><a href="<?php echo base_url('profile'); ?>">Sejarah</a></li>
                                 <li><a href="<?php echo base_url('profile/visidanmisi'); ?>">Visi dan Misi</a></li>
@@ -69,9 +70,17 @@
                         </li>
                         <li><a href="<?php echo base_url('meteorologi'); ?>">METEOROLOGI</a></li>
                         <li><a href="<?php echo base_url('klimatologi'); ?>">KLIMATOLOGI</a></li>
-                        <li><a href="<?php echo base_url('publikasi'); ?>">PUBLIKASI</a></li>
+                        <li><a href="<?php echo base_url('geofisika'); ?>">GEOFISIKA</a></li>
                         <li><a href="<?php echo base_url('publikasi/layananOnline'); ?>">LAYANAN ONLINE</a></li>
-                        <li><a href="<?php echo base_url('publikasi/artikel'); ?>">ARTIKEL</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="">PUBLIKASI
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" style="font-size: 14px">
+                                <li><a href="<?php echo base_url('publikasi'); ?>">Buletin</a></li>
+                                <li><a href="<?php echo base_url('publikasi/artikel'); ?>">Artikel</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div> <!-- /.navbar-collapse -->
             </div>
