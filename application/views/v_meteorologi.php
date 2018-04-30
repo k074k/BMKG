@@ -1,7 +1,7 @@
 <div class="container">
     <div class="container"  style="margin-bottom: 80px; margin-top: 130px">
         <div class="row">
-            
+
             <!-- Tabel Atas -->
             <div class="col-lg-4" >
                 <div class="panel panel-success" >
@@ -13,8 +13,8 @@
                                 </i>
                             </div>
                             <div class="col-xs-9 text-right">
-                                <div class="huge">26</div>
-                                <div>New Comments!</div>
+                                <div class="huge">Celcius</div>
+                                <div>Suhu Terkini</div>
                             </div>
                         </div>
                     </div>
@@ -31,7 +31,7 @@
                     </a>
                 </div>
             </div>
-            
+
             <div class="col-lg-4" >
                 <div class="panel panel-info">
                     <div class="panel-heading">
@@ -42,8 +42,8 @@
                                 </i>
                             </div>
                             <div class="col-xs-9 text-right">
-                                <div class="huge">26</div>
-                                <div>New Comments!</div>
+                                <div class="huge">Pa</div>
+                                <div>Tekanan Udara</div>
                             </div>
                         </div>
                     </div>
@@ -60,7 +60,7 @@
                     </a>
                 </div>
             </div>
-            
+
             <div class="col-lg-4" >
                 <div class="panel panel-success">
                     <div class="panel-heading">
@@ -71,8 +71,8 @@
                                 </i>
                             </div>
                             <div class="col-xs-9 text-right">
-                                <div class="huge">26</div>
-                                <div>New Comments!</div>
+                                <div class="huge">%</div>
+                                <div>Kelembaban</div>
                             </div>
                         </div>
                     </div>
@@ -90,7 +90,7 @@
                 </div>
             </div>
             <!-- //Tabel Atas -->
-            
+
             <!--Tabel Bawah -->
             <div class="col-lg-4" >
                 <div class="panel panel-info" >
@@ -103,7 +103,7 @@
                             </div>
                             <div class="col-xs-9 text-right">
                                 <div class="huge">26</div>
-                                <div>New Comments!</div>
+                                <div>Perkiraan Curah Hujan </div>
                             </div>
                         </div>
                     </div>
@@ -120,7 +120,7 @@
                     </a>
                 </div>
             </div>
-            
+
             <div class="col-lg-4" >
                 <div class="panel panel-success">
                     <div class="panel-heading">
@@ -131,8 +131,8 @@
                                 </i>
                             </div>
                             <div class="col-xs-9 text-right">
-                                <div class="huge">26</div>
-                                <div>New Comments!</div>
+                                <div class="huge">%</div>
+                                <div>Penguapan</div>
                             </div>
                         </div>
                     </div>
@@ -149,7 +149,7 @@
                     </a>
                 </div>
             </div>
-            
+
             <div class="col-lg-4" >
                 <div class="panel panel-info">
                     <div class="panel-heading">
@@ -160,8 +160,8 @@
                                 </i>
                             </div>
                             <div class="col-xs-9 text-right">
-                                <div class="huge">26</div>
-                                <div>New Comments!</div>
+                                <div class="huge">%</div>
+                                <div>Penyinaran</div>
                             </div>
                         </div>
                     </div>
@@ -179,7 +179,7 @@
                 </div>
             </div>
             <!-- //Tabel Bawah -->
-            
+
         </div>
     </div>
 </div>
