@@ -1,7 +1,7 @@
 <div class="container">
     <div class="container"  style="margin-bottom: 80px; margin-top: 130px">
         <div class="row">
-            
+
             <!-- Tabel Atas -->
             <div class="col-lg-4" >
                 <div class="panel panel-success" >
@@ -15,8 +15,8 @@
                                 </div>
                             </div>
                             <div class="col-xs-9 text-right">
-                                <div class="huge">26</div>
-                                <div>New Comments!</div>
+                                <div class="huge">SR</div>
+                                <div>Gempa Terkini</div>
                             </div>
                         </div>
                     </div>
@@ -33,7 +33,7 @@
                     </a>
                 </div>
             </div>
-            
+
             <div class="col-lg-4" >
                 <div class="panel panel-info">
                     <div class="panel-heading">
@@ -44,8 +44,8 @@
                                 </i>
                             </div>
                             <div class="col-xs-9 text-right">
-                                <div class="huge">26</div>
-                                <div>New Comments!</div>
+                                <div class="huge">SR</div>
+                                <div>Gempa Dirasakan</div>
                             </div>
                         </div>
                     </div>
@@ -62,7 +62,7 @@
                     </a>
                 </div>
             </div>
-            
+
             <div class="col-lg-4" >
                 <div class="panel panel-success">
                     <div class="panel-heading">
@@ -74,7 +74,7 @@
                             </div>
                             <div class="col-xs-9 text-right">
                                 <div class="huge">26</div>
-                                <div>New Comments!</div>
+                                <div>Petir Terkini</div>
                             </div>
                         </div>
                     </div>
@@ -91,7 +91,7 @@
                     </a>
                 </div>
             </div>
-            
+
         </div>
     </div>
 </div>
