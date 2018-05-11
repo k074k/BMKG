@@ -33,6 +33,18 @@
             <div class="col-lg-8" >
                 <ul class="nav nav-tabs" >
                     <li class="active" style="font-size: 12px; font-weight: bold"><a>Peta Klimatologi</a></li>
+                    <li>
+                      <a data-toggle="tab" href="#alat" style="font-size: 12px; font-weight: bold">Alat</a>
+                    </li>
+                    <li>
+                      <a data-toggle="tab" href="#metodologi" style="font-size: 12px; font-weight: bold">Metodologi</a>
+                    </li>
+                    <li>
+                      <a data-toggle="tab" href="#metodologi" style="font-size: 12px; font-weight: bold">Metodologi</a>
+                    </li>
+                    <li>
+                      <a data-toggle="tab" href="#metodologi" style="font-size: 12px; font-weight: bold">Metodologi</a>
+                    </li>
                 </ul>
                 <div id="map" style="margin-top:10px; height: 400px; box-shadow: 1px 1px 3px grey; padding: 0px 0px 0px 0px" class="col-lg-12">
                   <!--Maps-->

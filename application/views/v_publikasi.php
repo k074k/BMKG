@@ -1,4 +1,4 @@
-<div class="container" style="margin-top: 70px">
+<div class="container" style="margin-top: 5%">
     <div class="container" style="margin-left:45px;">
         <div class="row">
             <h3>Publikasi</h3>
@@ -22,7 +22,7 @@
                             </select>
                         </div>
                     </form>
-                </div>
+                </div> 
                 <div class="col-lg-9">
                     <form role="form">
                         <div class="form-group input-group">
@@ -37,29 +37,37 @@
                     </form>
                 </div>
             </div>
+
             <div class="row" style="padding-left: 2%; padding-right: 2%; ">
-                <div class="col-lg-12" style="background-color: white; box-shadow: 1px 1px 3px grey;">
-                    <div class="col-lg-4" style="padding-bottom: 5%; padding-top: 3%">
+                <div class="col-lg-12" style="background-color: white; box-shadow: 1px 1px 3px grey; padding-top: 3%">
+
+                    <div class="col-lg-2" style="padding-bottom: 5%; padding-top: 3%">
                         <img src="<?php echo base_url('assets/buletin/BULETIN_MARET2018-01.jpg'); ?>" width="100%">
                     </div>
-                    <div class="col-lg-8" style="padding-bottom: 5%;">
-                        <h2 style="font-weight: bold">GEODINAMIKA</h2>
-                        <p>Nomer Katalog : - <br>
-                            Nomor Publikasi : - <br>
-                            ISSN / ISBN : - <br>
-                            Tanggal Rilis : - <br>
-                            Ukuran File : -
+                    <div class="col-lg-10" style="padding-bottom: 2%;">
+                        <h5 style="font-weight: bold">GEODINAMIKA</h5>
+                        <p style="font-size: 11px">Nomer Katalog : - | Nomor Publikasi : - | ISSN / ISBN : - | Tanggal Rilis : - | Ukuran File : - 
                         </p>
-                        <p>
+                        <p style="font-size: 11px">
                             salah satu bentuk pelayanan informasi kepada masyarakat Provinsi Bali pada umumnya dan kota Denpasar khususnya mengenai kondisi dinamika geofisika, meteorologi, klimatologi dan kualitas udara.
                         </p>
-                        <p>
-                            Buletin ini berisi tentang pengetahuan dan ulasan gempabumi, percepatan tanah, kelistrikan udara Pulau Bali, dinamika iklim Kota Denpasar, almanak tanda waktu kota Denpasar dan prakiraan musim hujan provinsi Bali.
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">
+                                Unduh
+                            </button>
+                        </div>
+                    </div>
+                    <hr width="100%">
+                    <div class="col-lg-2" style="padding-bottom: 5%; padding-top: 3%">
+                        <img src="<?php echo base_url('assets/buletin/BULETIN_MARET2018-01.jpg'); ?>" width="100%">
+                    </div>
+                    <div class="col-lg-10" style="padding-bottom: 2%;">
+                        <h5 style="font-weight: bold">GEODINAMIKA</h5>
+                        <p style="font-size: 11px">Nomer Katalog : - | Nomor Publikasi : - | ISSN / ISBN : - | Tanggal Rilis : - | Ukuran File : - 
                         </p>
-                        <p>
-                            Hasilnya disampaikan dalam bentuk informasi, tabulasi, diagram, peta dan data yang sifatnya saling melengkapi.
+                        <p style="font-size: 11px">
+                            salah satu bentuk pelayanan informasi kepada masyarakat Provinsi Bali pada umumnya dan kota Denpasar khususnya mengenai kondisi dinamika geofisika, meteorologi, klimatologi dan kualitas udara.
                         </p>
-                        <hr>
                         <div class="form-group ">
                             <button type="submit" class="btn btn-primary">
                                 Unduh
@@ -69,13 +77,13 @@
                 </div>
             </div>
             <div class="row" style="padding-left: 2%; padding-right: 2%; margin-top: 1%">
-                    <ul class="pagination" style="box-shadow: 1px 1px 3px grey;">
-                        <li class="active"><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                    </ul>
+                <ul class="pagination" style="box-shadow: 1px 1px 3px grey;">
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                </ul>
             </div>
         </div>
 
