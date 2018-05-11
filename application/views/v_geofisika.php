@@ -1,7 +1,7 @@
 <div class="container">
     <div class="container"  style="margin-bottom: 80px; margin-top: 130px">
         <div class="row">
-            
+
             <!-- Tabel Atas -->
             <div class="col-lg-4" >
                 <div class="panel panel-success" >
@@ -13,8 +13,8 @@
                                 </i>
                             </div>
                             <div class="col-xs-9 text-right">
-                                <div class="huge">26</div>
-                                <div>New Comments!</div>
+                                <div class="huge">SR</div>
+                                <div>Gempa Terkini</div>
                             </div>
                         </div>
                     </div>
@@ -31,7 +31,7 @@
                     </a>
                 </div>
             </div>
-            
+
             <div class="col-lg-4" >
                 <div class="panel panel-info">
                     <div class="panel-heading">
@@ -42,8 +42,8 @@
                                 </i>
                             </div>
                             <div class="col-xs-9 text-right">
-                                <div class="huge">26</div>
-                                <div>New Comments!</div>
+                                <div class="huge">SR</div>
+                                <div>Gempa Dirasakan</div>
                             </div>
                         </div>
                     </div>
@@ -60,7 +60,7 @@
                     </a>
                 </div>
             </div>
-            
+
             <div class="col-lg-4" >
                 <div class="panel panel-success">
                     <div class="panel-heading">
@@ -72,11 +72,11 @@
                             </div>
                             <div class="col-xs-9 text-right">
                                 <div class="huge">26</div>
-                                <div>New Comments!</div>
+                                <div>Petir Terkini</div>
                             </div>
                         </div>
                     </div>
-                    <a href="<?php echo base_url('meteorologi/kelembaban'); ?>">
+                    <a href="<?php echo base_url('geofisika/petir'); ?>">
                         <div class="panel-footer">
                             <span class="pull-left">View Details</span>
                             <span class="pull-right">
@@ -90,7 +90,7 @@
                 </div>
             </div>
             <!-- //Tabel Atas -->
-            
+
             <!--Tabel Bawah -->
             <div class="col-lg-4" >
                 <div class="panel panel-info" >
@@ -103,7 +103,7 @@
                             </div>
                             <div class="col-xs-9 text-right">
                                 <div class="huge">26</div>
-                                <div>New Comments!</div>
+                                <div>Hilal</div>
                             </div>
                         </div>
                     </div>
@@ -120,7 +120,7 @@
                     </a>
                 </div>
             </div>
-            
+
             <div class="col-lg-4" >
                 <div class="panel panel-success">
                     <div class="panel-heading">
@@ -149,7 +149,7 @@
                     </a>
                 </div>
             </div>
-            
+
             <div class="col-lg-4" >
                 <div class="panel panel-info">
                     <div class="panel-heading">
@@ -161,7 +161,7 @@
                             </div>
                             <div class="col-xs-9 text-right">
                                 <div class="huge">26</div>
-                                <div>New Comments!</div>
+                                <div>Almanah</div>
                             </div>
                         </div>
                     </div>
@@ -179,7 +179,6 @@
                 </div>
             </div>
             <!-- //Tabel Bawah -->
-            
         </div>
     </div>
 </div>
