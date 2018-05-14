@@ -37,14 +37,17 @@
                     center: {lat:-8.0014771, lng: 114.6530128},
                   });
 
-                  var secretMessages = ['Denpasar, 5 SR ,100m'];
+                  var secretMessages = 'Denpasar, 5 SR ,100m';
+                  var image = '<?php echo base_url('assets/icon/iconStorm.png'); ?>';
                   var marker = new google.maps.Marker({
                     position: {
                       lat: -8.6769762 ,
                       lng: 115.2096427
-                    },map: map
+                    },
+                    map: map,
+                    icon:image
                   });
-                  attachSecretMessage(marker, secretMessages[0]);
+                  attachSecretMessage(marker, secretMessages);
                 }
                 function attachSecretMessage(marker, secretMessage) {
                   var infowindow = new google.maps.InfoWindow({
