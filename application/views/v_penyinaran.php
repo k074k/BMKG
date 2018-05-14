@@ -25,12 +25,14 @@
                     <div class="col-lg-3">
                         <form role="form">
                             <div class="form-group">
-                                <select class="form-control">
+                                <select class="form-control" name="tahun">
                                     <option>---- Pilih Tahun ----</option>
-                                    <option>2015</option>
-                                    <option>2016</option>
-                                    <option>2017</option>
-                                    <option>2018</option>
+                                    <?php 
+                                    $year = date('Y'); 
+                                    for ($i = 1994; $i <= $year; $i++)  {
+                                    ?>
+                                    <option><?php echo $i; ?></option>
+                                    <?php } ?>
                                 </select>
                             </div>
                         </form>

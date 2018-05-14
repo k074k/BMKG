@@ -18,7 +18,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="<?php echo base_url('meteorologi/suhu'); ?>">
+                    <a href="<?php echo base_url('dashboard'); ?>">
                         <div class="panel-footer">
                             <span class="pull-left">View Details</span>
                             <span class="pull-right">
