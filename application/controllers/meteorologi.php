@@ -1,11 +1,13 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
+error_reporting(0);
 
 class Meteorologi extends CI_Controller {
 
     function __construct(){
         parent::__construct();
         $this->load->model('m_data');
+        //$this->load->library('report');
     }
     
     public function index()   {
@@ -15,18 +17,10 @@ class Meteorologi extends CI_Controller {
     }
     
     public function suhu()  {
-        $tahun = 1994;
-        $where = array(
-            "TahunIklim" => $tahun 
-        );
-        $where = array_filter($where);
-        $data = array(
-            "detail" => $this->m_data->get_data("tb_daily_iklim", $where)->result()
-        );
-       // $this->load->view('v_header');
-        //$this->load->view('v_print_iklim2',$data);
-        $this->load->view('test', $data);
-       // $this->load->view('v_footer');
+        
+        $this->load->view('v_header');
+        $this->load->view('v_suhu', $data);
+        $this->load->view('v_footer');
     }
     
     public function tekanan()  {
