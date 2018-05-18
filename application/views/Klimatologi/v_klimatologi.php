@@ -50,23 +50,28 @@
                 </ul>
                 <div class="tab-content">
                     <div id="CH" class="tab-pane fade in active">
-                        <div style="margin-top:10px; height: 400px; box-shadow: 1px 1px 3px grey; padding: 0px 0px 0px 0px;  background-color:white; padding-bottom: 5%;" class="col-lg-12" >
+                        <div style="margin-top:10px; height: 400px; padding-bottom: 5%;" class="col-lg-12" >
+                            <img style="padding-left:15%; padding-top: 2%" src="<?php echo base_url('assets/db_klimatologi/CH.jpg'); ?>" height="100%">
                         </div>
                     </div>
                     <div id="SH" class="tab-pane fade">
-                        <div style="margin-top:10px; height: 400px; box-shadow: 1px 1px 3px grey; padding: 0px 0px 0px 0px;  background-color:white; padding-bottom: 5%;" class="col-lg-12" >
+                        <div style="margin-top:10px; height: 400px; padding-bottom: 5%;" class="col-lg-12" >
+                            <img style="padding-left:15%; padding-top: 2%" src="<?php echo base_url('assets/db_klimatologi/SH.jpg'); ?>" height="100%">
                         </div>
                     </div>
                     <div id="KAT" class="tab-pane fade">
-                        <div style="margin-top:10px; height: 400px; box-shadow: 1px 1px 3px grey; padding: 0px 0px 0px 0px;  background-color:white; padding-bottom: 5%;" class="col-lg-12" >
+                        <div style="margin-top:10px; height: 400px; padding-bottom: 5%;" class="col-lg-12" >
+                            <img style="padding-left:15%; padding-top: 2%" src="<?php echo base_url('assets/db_klimatologi/KAT.jpg'); ?>" height="100%">
                         </div>
                     </div>
                     <div id="SPI" class="tab-pane fade">
-                        <div style="margin-top:10px; height: 400px; box-shadow: 1px 1px 3px grey; padding: 0px 0px 0px 0px;  background-color:white; padding-bottom: 5%;" class="col-lg-12" >
+                        <div style="margin-top:10px; height: 400px; padding-bottom: 5%;" class="col-lg-12" >
+                            <img style="padding-left:30%; padding-top: 2%" src="<?php echo base_url('assets/db_klimatologi/SPI.jpg'); ?>" height="100%">
                         </div>
                     </div>
                     <div id="HTH" class="tab-pane fade">
-                        <div style="margin-top:10px; height: 400px; box-shadow: 1px 1px 3px grey; padding: 0px 0px 0px 0px;  background-color:white; padding-bottom: 5%;" class="col-lg-12" >
+                        <div style="margin-top:10px; height: 400px; padding-bottom: 5%;" class="col-lg-12" >
+                            <img style="padding-left:15%; padding-top: 2%" src="<?php echo base_url('assets/db_klimatologi/HTH.jpg'); ?>" height="100%">
                         </div>
                     </div>
                   </div>

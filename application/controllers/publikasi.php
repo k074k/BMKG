@@ -14,28 +14,22 @@ class publikasi extends CI_Controller {
     public function index() {
         $data['buletin'] = $this->m_data->get_buletin()->result();
         
-        $jumlah_data = $this->m_data->jumlah_data();
-        $config['base_url'] = base_url().'publikasi/index/';
-        $config['total_rows'] = $jumlah_data;
-        $config['per_page'] = 5;
-        $from = $this->uri->segment(4);
-        $this->pagination->initialize($config);
-        $data['page'] = $this->m_data->data($config['per_page'], $from);
-
         $this->load->view('v_header');
-        $this->load->view('v_publikasi');
+        $this->load->view('Publikasi/v_publikasi', $data);
         $this->load->view('v_footer');
     }
 
+    /*
     public function download(){
         $file = $this->uri->segment(4);
         force_download($file, NULL);
     }
+    */
 
     public function artikel() {
         $data['buletin'] = $this->m_data->get_buletin()->result();
         $this->load->view('v_header');
-        $this->load->view('v_artikel');
+        $this->load->view('Publikasi/v_artikel', $data);
         $this->load->view('v_footer');
     }
 
