@@ -32,58 +32,46 @@
             <!--Tabel Kanan -->
             <div class="col-lg-8" >
                 <ul class="nav nav-tabs" >
-                    <li class="active" style="font-size: 12px; font-weight: bold"><a>Peta Klimatologi</a></li>
-                    <li>
-                      <a data-toggle="tab" href="#alat" style="font-size: 12px; font-weight: bold">Alat</a>
+                    <li class="active" style="font-size: 12px; font-weight: bold">
+                      <a data-toggle="tab" href="#CH">Curah Hujan</a>
                     </li>
                     <li>
-                      <a data-toggle="tab" href="#metodologi" style="font-size: 12px; font-weight: bold">Metodologi</a>
+                      <a data-toggle="tab" href="#SH" style="font-size: 12px; font-weight: bold">Sifat Hujan</a>
                     </li>
                     <li>
-                      <a data-toggle="tab" href="#metodologi" style="font-size: 12px; font-weight: bold">Metodologi</a>
+                      <a data-toggle="tab" href="#KAT" style="font-size: 12px; font-weight: bold">Ketersediaan Air Tanah</a>
                     </li>
                     <li>
-                      <a data-toggle="tab" href="#metodologi" style="font-size: 12px; font-weight: bold">Metodologi</a>
+                      <a data-toggle="tab" href="#SPI" style="font-size: 12px; font-weight: bold">Indeks Pretisipasi Terstandarisasi</a>
+                    </li>
+                    <li>
+                      <a data-toggle="tab" href="#HTH" style="font-size: 12px; font-weight: bold">Hari Tanpa Hujan</a>
                     </li>
                 </ul>
-                <div id="map" style="margin-top:10px; height: 400px; box-shadow: 1px 1px 3px grey; padding: 0px 0px 0px 0px" class="col-lg-12">
-                  <!--Maps-->
-                  <script>
-                    var citymap = {
-                      chicago: {
-                        center: {lat: -8.650000, lng: 115.216667},
-                        population: 563300
-                      }
-                    };
-
-                    function initMap() {
-                      // Create the map.
-                      var map = new google.maps.Map(document.getElementById('map'), {
-                        zoom: 8,
-                        center: {lat:-8.0014771, lng: 114.6530128},
-                        mapTypeId: 'terrain'
-                      });
-
-                      for (var city in citymap) {
-                        var cityCircle = new google.maps.Circle({
-                          strokeColor: '#FF0000',
-                          strokeOpacity: 0.1,
-                          strokeWeight: 2,
-                          fillColor: '#FF0000',
-                          fillOpacity: 0.35,
-                          map: map,
-                          center: citymap[city].center,
-                          radius: Math.sqrt(citymap[city].population) * 100
-                        });
-                      }
-                    }
-                  </script>
-                  <script async defer
-                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcZJ8zBcGKVDzLH2fcwflexue9ZoiIoCY&callback=initMap">
-                  </script>
-                </div>
-            </div>
+                <div class="tab-content">
+                    <div id="CH" class="tab-pane fade in active">
+                        <div style="margin-top:10px; height: 400px; box-shadow: 1px 1px 3px grey; padding: 0px 0px 0px 0px;  background-color:white; padding-bottom: 5%;" class="col-lg-12" >
+                        </div>
+                    </div>
+                    <div id="SH" class="tab-pane fade">
+                        <div style="margin-top:10px; height: 400px; box-shadow: 1px 1px 3px grey; padding: 0px 0px 0px 0px;  background-color:white; padding-bottom: 5%;" class="col-lg-12" >
+                        </div>
+                    </div>
+                    <div id="KAT" class="tab-pane fade">
+                        <div style="margin-top:10px; height: 400px; box-shadow: 1px 1px 3px grey; padding: 0px 0px 0px 0px;  background-color:white; padding-bottom: 5%;" class="col-lg-12" >
+                        </div>
+                    </div>
+                    <div id="SPI" class="tab-pane fade">
+                        <div style="margin-top:10px; height: 400px; box-shadow: 1px 1px 3px grey; padding: 0px 0px 0px 0px;  background-color:white; padding-bottom: 5%;" class="col-lg-12" >
+                        </div>
+                    </div>
+                    <div id="HTH" class="tab-pane fade">
+                        <div style="margin-top:10px; height: 400px; box-shadow: 1px 1px 3px grey; padding: 0px 0px 0px 0px;  background-color:white; padding-bottom: 5%;" class="col-lg-12" >
+                        </div>
+                    </div>
+                  </div>
             <!--//Tabel Kanan -->
-        </div>
-    </div>
+            </div>
+          </div>
+      </div>
 </div>

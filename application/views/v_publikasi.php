@@ -37,53 +37,37 @@
                     </form>
                 </div>
             </div>
-
+            <?php 
+            $no = $this->uri->segment('3') + 1;
+            foreach ($buletin as $data) {
+                
+            ?>
             <div class="row" style="padding-left: 2%; padding-right: 2%; ">
                 <div class="col-lg-12" style="background-color: white; box-shadow: 1px 1px 3px grey; padding-top: 3%">
 
                     <div class="col-lg-2" style="padding-bottom: 5%; padding-top: 3%">
-                        <img src="<?php echo base_url('assets/buletin/BULETIN_MARET2018-01.jpg'); ?>" width="100%">
+                        <img src="<?php echo base_url('assets/db_buletin/cover/'.$data->id_buletin.'.jpg'); ?>" width="100%">
                     </div>
                     <div class="col-lg-10" style="padding-bottom: 2%;">
-                        <h5 style="font-weight: bold">GEODINAMIKA</h5>
-                        <p style="font-size: 11px">Nomer Katalog : - | Nomor Publikasi : - | ISSN / ISBN : - | Tanggal Rilis : - | Ukuran File : - 
+                        <h5 style="font-weight: bold"><?php echo $data->judul; ?></h5>
+                        <p style="font-size: 11px">Nomer Katalog : <?php echo $data->id_buletin; ?> | ISSN / ISBN : - | Tanggal Rilis : <?php echo $data->tgl_rilis; ?> | Ukuran File : <?php  echo $data->size; ?> MB 
                         </p>
-                        <p style="font-size: 11px">
-                            salah satu bentuk pelayanan informasi kepada masyarakat Provinsi Bali pada umumnya dan kota Denpasar khususnya mengenai kondisi dinamika geofisika, meteorologi, klimatologi dan kualitas udara.
+                        <p style="font-size: 12px">
+                            <?php echo $data->ket; ?>
                         </p>
                         <div class="form-group">
-                            <button type="submit" class="btn btn-primary">
-                                Unduh
-                            </button>
-                        </div>
-                    </div>
-                    <hr width="100%">
-                    <div class="col-lg-2" style="padding-bottom: 5%; padding-top: 3%">
-                        <img src="<?php echo base_url('assets/buletin/BULETIN_MARET2018-01.jpg'); ?>" width="100%">
-                    </div>
-                    <div class="col-lg-10" style="padding-bottom: 2%;">
-                        <h5 style="font-weight: bold">GEODINAMIKA</h5>
-                        <p style="font-size: 11px">Nomer Katalog : - | Nomor Publikasi : - | ISSN / ISBN : - | Tanggal Rilis : - | Ukuran File : - 
-                        </p>
-                        <p style="font-size: 11px">
-                            salah satu bentuk pelayanan informasi kepada masyarakat Provinsi Bali pada umumnya dan kota Denpasar khususnya mengenai kondisi dinamika geofisika, meteorologi, klimatologi dan kualitas udara.
-                        </p>
-                        <div class="form-group ">
-                            <button type="submit" class="btn btn-primary">
-                                Unduh
-                            </button>
+                            <a href="<?php echo base_url('assets/db_buletin/file/'.$data->id_buletin.'.pdf'); ?>">
+                                <button type="submit" class="btn btn-primary" hr>
+                                    Unduh
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
+            <?php } ?>
             <div class="row" style="padding-left: 2%; padding-right: 2%; margin-top: 1%">
-                <ul class="pagination" style="box-shadow: 1px 1px 3px grey;">
-                    <li class="active"><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                </ul>
+                <?php echo $this->pagination->create_links(); ?>
             </div>
         </div>
 

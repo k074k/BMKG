@@ -37,35 +37,31 @@
                     </form>
                 </div>
             </div>
+            <?php 
+            $no = $this->uri->segment('3') + 1;
+            foreach ($buletin as $data) {
+                
+            ?>
             <div class="row" style="padding-left: 2%; padding-right: 2%; ">
-                <div class="col-lg-12" style="background-color: white; box-shadow: 1px 1px 3px grey;">
-                    <div class="col-lg-4" style="padding-bottom: 5%; padding-top: 3%">
-                        <img src="<?php echo base_url('assets/buletin/BULETIN_MARET2018-01.jpg'); ?>" width="100%">
+                <div class="col-lg-12" style="background-color: white; box-shadow: 1px 1px 3px grey; padding-top: 3%">
+
+                    <div class="col-lg-2" style="padding-bottom: 5%; padding-top: 3%">
+                        <img src="<?php echo base_url('assets/db_buletin/cover/'.$data->id_buletin.'.jpg'); ?>" width="100%">
                     </div>
-                    <div class="col-lg-8" style="padding-bottom: 5%;">
-                        <h2 style="font-weight: bold">GEODINAMIKA</h2>
-                        <p>Nomer Katalog : - <br>
-                            Nomor Publikasi : - <br>
-                            ISSN / ISBN : - <br>
-                            Tanggal Rilis : - <br>
-                            Ukuran File : -
+                    <div class="col-lg-10" style="padding-bottom: 2%;">
+                        <h5 style="font-weight: bold"><?php echo $data->judul; ?></h5>
+                        <p style="font-size: 11px">Nomer Katalog : <?php echo $data->id_buletin; ?> | ISSN / ISBN : - | Tanggal Rilis : <?php echo $data->tgl_rilis; ?> | Ukuran File : <?php  echo $data->size; ?> MB 
                         </p>
-                        <p>
-                            salah satu bentuk pelayanan informasi kepada masyarakat Provinsi Bali pada umumnya dan kota Denpasar khususnya mengenai kondisi dinamika geofisika, meteorologi, klimatologi dan kualitas udara.
+                        <p style="font-size: 12px">
+                            <?php echo $data->ket; ?>
                         </p>
-                        <p>
-                            Buletin ini berisi tentang pengetahuan dan ulasan gempabumi, percepatan tanah, kelistrikan udara Pulau Bali, dinamika iklim Kota Denpasar, almanak tanda waktu kota Denpasar dan prakiraan musim hujan provinsi Bali.
-                        </p>
-                        <p>
-                            Hasilnya disampaikan dalam bentuk informasi, tabulasi, diagram, peta dan data yang sifatnya saling melengkapi.
-                        </p>
-                        <hr>
                         <div class="form-group ">
                                 <a type="button" class="btn btn-default"  href="<?php echo base_url('publikasi/detailArtikel') ?>">View Details</a>
                         </div>
                     </div>
                 </div>
             </div>
+            <?php }?>
             <div class="row" style="padding-left: 2%; padding-right: 2%; margin-top: 1%">
                     <ul class="pagination" style="box-shadow: 1px 1px 3px grey;">
                         <li class="active"><a href="#">1</a></li>
