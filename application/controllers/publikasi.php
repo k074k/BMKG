@@ -23,7 +23,7 @@ class publikasi extends CI_Controller {
         $data['page'] = $this->m_data->data($config['per_page'], $from);
 
         $this->load->view('v_header');
-        $this->load->view('v_publikasi', $data);
+        $this->load->view('v_publikasi');
         $this->load->view('v_footer');
     }
 
@@ -35,24 +35,24 @@ class publikasi extends CI_Controller {
     public function artikel() {
         $data['buletin'] = $this->m_data->get_buletin()->result();
         $this->load->view('v_header');
-        $this->load->view('v_artikel', $data);
+        $this->load->view('v_artikel');
         $this->load->view('v_footer');
     }
 
     public function detailArtikel() {
         $this->load->view('v_header');
-        $this->load->view('v_detailArtikel');
+        $this->load->view('Publikasi/v_detailArtikel');
         $this->load->view('v_footer');
     }
     public function layananOnline() {
         $this->load->view('v_header');
-        $this->load->view('v_katalog');
+        $this->load->view('Publikasi/v_katalog');
         $this->load->view('v_footer');
     }
 
     public function pemesanan() {
         $this->load->view('v_header');
-        $this->load->view('v_pemesanan');
+        $this->load->view('Publikasi/v_pemesanan');
         $this->load->view('v_footer');
     }
 
