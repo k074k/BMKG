@@ -27,16 +27,9 @@
                   <script>
                     var citymap = {
                       <?php foreach($tb_gempa as $t) {?>
-                        req<?php echo $t->IDGempa  ?>: {
+                        req<?php echo $t->IDGempa ?>: {
                           center: {lat: <?php echo $t->Lintang ?>, lng: <?php echo $t->Bujur ?>},
-                            <?php if ($t->Magnitude<=3) {
-                              $p=10000;
-                            }elseif ($t->Magnitude<=6) {
-                              $p=25000;
-                            }elseif ($t->Magnitude>6) {
-                              $p=50000;
-                            }?>
-                          population:<?php echo $p ?>
+                          population:1000
                         },
                       <?php }?>
                     };
@@ -46,12 +39,11 @@
                       var map = new google.maps.Map(document.getElementById('map'), {
                         zoom: 8,
                         center: {lat:-8.0014771, lng: 114.6530128},
-                        mapTypeId: 'terrain'
                       });
 
                       for (var city in citymap) {
                         var cityCircle = new google.maps.Circle({
-                          strokeColor: '#FF0000',
+                          strokeColor: '#000000',
                           strokeOpacity: 0.1,
                           strokeWeight: 2,
                           <?php if ($t->Magnitude>=300){
@@ -62,7 +54,7 @@
                             $c= '#FF0000';
                           }?>
                           fillColor:'<?php echo $c?>',
-                          fillOpacity: 0.5,
+                          fillOpacity: 1,
                           map: map,
                           center: citymap[city].center,
                           radius: Math.sqrt(citymap[city].population) * 100
