@@ -11,6 +11,7 @@
             <div class="embed-responsive embed-responsive-4by3">
                 <embed src="<?php echo base_url('db_buletin/file/'.$data.'.pdf'); ?>" type="apliccation/pdf" width="50%" height="100%" />
             </div>
+            <?php echo $data; ?>
         </div>
     </div>
 </div>

@@ -56,8 +56,33 @@
                         </p>
                         <div class="form-group ">
                             <input type="hidden" name="artikel" value="<?php echo $row->id_buletin; ?>">
-                            <a " type="button" class="btn btn-default"  href="<?php echo base_url('publikasi/detailArtikel') ?>">View Details</a>
+                            <a data-toggle="modal" data-target="#myModal" type="button" class="btn btn-default">View Details</a>
                         </div>
+
+                        <!-- Modal -->
+                        <div id="myModal" class="modal fade" role="dialog">
+                            <div class="modal-dialog">
+                                <!-- konten modal-->
+                                <div class="modal-content">
+                                    <!-- heading modal -->
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title"><center><?php echo $row->judul; ?></center></h4>
+                                    </div>
+                                    <!-- body modal -->
+                                    <div class="modal-body">
+                                        <div class="embed-responsive embed-responsive-4by3">
+                                            <embed src="<?php echo base_url('db_buletin/file/'.$row->id_buletin.'.pdf'); ?>" type="apliccation/pdf" width="50%" height="100%" />
+                                        </div>
+                                    </div>
+                                    <!-- footer modal -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Tutup Modal</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>

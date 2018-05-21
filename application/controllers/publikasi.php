@@ -9,7 +9,7 @@ class publikasi extends CI_Controller {
         $this->load->library('pagination');
         $this->load->helper(array('url', 'download'));
         $this->load->database();
-        $this->load->library('form_validation');
+        $this->load->library('form_validation');    
         
     }
 
@@ -107,10 +107,13 @@ class publikasi extends CI_Controller {
     }
 
     public function detailArtikel() {
-        $id['data'] = $this->input->post('artikel');
+        $id = $this->input->post('artikel');
+        $data = array(
+            "data" => $id
+        );
 
         $this->load->view('v_header');
-        $this->load->view('Publikasi/v_detailArtikel', $id);
+        $this->load->view('Publikasi/v_detailArtikel', $data);
         $this->load->view('v_footer');
     }
     public function layananOnline() {
