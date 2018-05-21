@@ -9,7 +9,7 @@
     <div class="container">
         <div class="col-lg-8" style="margin-bottom: 10%; padding-left: 5%; padding-top: 25px; ">
             <div class="embed-responsive embed-responsive-4by3">
-                <embed src="<?php echo  ?>" width="50%" height="100%" />
+                <embed src="<?php echo base_url('assets/WELCOME.pdf'); ?>" type="apliccation/pdf" width="50%" height="100%" />
             </div>
         </div>
     </div>

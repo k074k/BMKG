@@ -38,38 +38,32 @@
                 </div>
             </div>
             <?php 
-            $no = $this->uri->segment('3') + 1;
-            foreach ($buletin as $data) {
+            foreach ($data->result() as $row) {
                 
             ?>
             <div class="row" style="padding-left: 2%; padding-right: 2%; ">
                 <div class="col-lg-12" style="background-color: white; box-shadow: 1px 1px 3px grey; padding-top: 3%">
 
                     <div class="col-lg-2" style="padding-bottom: 5%; padding-top: 3%">
-                        <img src="<?php echo base_url('assets/db_buletin/cover/'.$data->id_buletin.'.jpg'); ?>" width="100%">
+                        <img src="<?php echo base_url('assets/db_buletin/cover/'.$row->id_buletin.'.jpg'); ?>" width="100%">
                     </div>
                     <div class="col-lg-10" style="padding-bottom: 2%;">
-                        <h5 style="font-weight: bold"><?php echo $data->judul; ?></h5>
-                        <p style="font-size: 11px">Nomer Katalog : <?php echo $data->id_buletin; ?> | ISSN / ISBN : - | Tanggal Rilis : <?php echo $data->tgl_rilis; ?> | Ukuran File : <?php  echo $data->size; ?> MB 
+                        <h5 style="font-weight: bold"><?php echo $row->judul; ?></h5>
+                        <p style="font-size: 11px">Nomer Katalog : <?php echo $row->id_buletin; ?> | ISSN / ISBN : - | Tanggal Rilis : <?php echo $row->tgl_rilis; ?> | Ukuran File : <?php  echo $row->size; ?> MB 
                         </p>
                         <p style="font-size: 12px">
-                            <?php echo $data->ket; ?>
+                            <?php echo $row->ket; ?>
                         </p>
                         <div class="form-group ">
-                                <a type="button" class="btn btn-default"  href="<?php echo base_url('publikasi/detailArtikel') ?>">View Details</a>
+                            <input type="hidden" name="artikel" value="<?php echo $row->id_buletin; ?>">
+                            <a " type="button" class="btn btn-default"  href="<?php echo base_url('publikasi/detailArtikel') ?>">View Details</a>
                         </div>
                     </div>
                 </div>
             </div>
             <?php }?>
             <div class="row" style="padding-left: 2%; padding-right: 2%; margin-top: 1%">
-                    <ul class="pagination" style="box-shadow: 1px 1px 3px grey;">
-                        <li class="active"><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                    </ul>
+                <?php echo $pagination; ?>
             </div>
         </div>
 
