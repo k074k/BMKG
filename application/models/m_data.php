@@ -9,11 +9,8 @@ class M_data extends CI_Model{
 		return $this->db->get('tb_buletin');
   	}
 
-  	function data($number,$offset){
-		return $query = $this->db->get('tb_buletin',$number,$offset)->result();		
-	}
- 
-	function jumlah_data(){
-		return $this->db->get('tb_buletin')->num_rows();
+  	function get_buletin_list($number, $offset){
+		$query = $this->db->get('tb_buletin', $number, $offset);		
+		return $query;
 	}
 }
