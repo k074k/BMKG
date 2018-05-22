@@ -11,6 +11,13 @@
                 <div class="tab-content">
                     <div id="Gempa" class="tab-pane fade in active">
                         <div style="margin-top:10px; background-color:white; height: 400px; box-shadow: 1px 1px 3px grey;" class="col-lg-12">
+                          <nav style="width:100%;height:100%;overflow: auto;" >
+                            <ul class="list-group" style="margin-top: 5%;">
+                              <?php foreach ($tb_gempa as $i) { ?>
+                                <li class="list-group-item"><?php echo $i->Keterangan ?><span class="badge"><?php echo $i->Magnitude ?>SR</span></li>
+                              <?php } ?>
+                            </ul>
+                          </nav>
                         </div>
                     </div>
                 </div>
@@ -23,37 +30,29 @@
                     <li class="active" style="font-size: 12px; font-weight: bold"><a>Peta Gempabumi</a></li>
                 </ul>
                   <!--Maps-->
-                  <?php $m=date("m");?>
                   <script>
+                    //Create location
                     var citymap = {
                       <?php foreach($tb_gempa as $t) {?>
                         req<?php echo $t->IDGempa ?>: {
                           center: {lat: <?php echo $t->Lintang ?>, lng: <?php echo $t->Bujur ?>},
-                          population:1000
+                          population:750
                         },
                       <?php }?>
                     };
-
+                    //Create Map
                     function initMap() {
-                      // Create the map.
                       var map = new google.maps.Map(document.getElementById('map'), {
                         zoom: 8,
                         center: {lat:-8.0014771, lng: 114.6530128},
                       });
-
+                      //Create Circle
                       for (var city in citymap) {
                         var cityCircle = new google.maps.Circle({
                           strokeColor: '#000000',
                           strokeOpacity: 0.1,
                           strokeWeight: 2,
-                          <?php if ($t->Magnitude>=300){
-                            $c='#00FF00';
-                          } elseif ($t->Magnitude>60||$t->Magnitude<300) {
-                            $c='#FFFF00';
-                          }elseif ($t->Magnitude<60) {
-                            $c= '#FF0000';
-                          }?>
-                          fillColor:'<?php echo $c?>',
+                          fillColor:'#FF0000',
                           fillOpacity: 1,
                           map: map,
                           center: citymap[city].center,
