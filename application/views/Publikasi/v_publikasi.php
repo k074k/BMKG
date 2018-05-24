@@ -10,25 +10,12 @@
     <div class="col-lg-12">
         <div class="col-lg-8" style="margin-bottom: 60px; padding-left: 3%; padding-top: 1%;">
             <div class="row">
-                <div class="col-lg-3">
-                    <form role="form">
-                        <div class="form-group">
-                            <select class="form-control">
-                                <option>---- Pilih Tahun ----</option>
-                                <option>2015</option>
-                                <option>2016</option>
-                                <option>2017</option>
-                                <option>2018</option>
-                            </select>
-                        </div>
-                    </form>
-                </div> 
-                <div class="col-lg-9">
-                    <form role="form">
+                <div class="col-lg-12">
+                    <form role="form" action="<?php echo site_url('publikasi/search');?>" method="GET">
                         <div class="form-group input-group">
-                            <input type="text" class="form-control" placeholder="Kata Kunci . . . . . . .">
+                            <input name="search" type="text" class="form-control" placeholder="Kata Kunci . . . . . . .">
                             <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">
+                                <button class="btn btn-default" type="submit">
                                     <i class="glyphicon glyphicon-search">
                                     </i>
                                 </button>
@@ -42,7 +29,6 @@
             ?>
             <div class="row" style="padding-left: 2%; padding-right: 2%; ">
                 <div class="col-lg-12" style="background-color: white; box-shadow: 1px 1px 3px grey; padding-top: 3%">
-
                     <div class="col-lg-2" style="padding-bottom: 5%; padding-top: 3%">
                         <img src="<?php echo base_url('assets/db_buletin/cover/'.$row->id_buletin.'.jpg'); ?>" width="100%">
                     </div>
@@ -55,7 +41,7 @@
                         </p>
                         <div class="form-group">
                             <a href="<?php echo base_url('assets/db_buletin/file/'.$row->id_buletin.'.pdf'); ?>">
-                                <button type="submit" class="btn btn-primary" hr>
+                                <button type="submit" class="btn btn-primary" >
                                     Unduh
                                 </button>
                             </a>
@@ -63,7 +49,15 @@
                     </div>
                 </div>
             </div>
-            <?php } ?>
+            <?php 
+            } ?>
+        <!--
+            <div class="row" style="padding-left: 2%; padding-right: 2%; ">
+                <div class="col-lg-12" style="background-color: white; box-shadow: 1px 1px 3px grey; padding-top: 3%">
+                    Data Tidak Ditemukan!
+                </div>
+            </div>
+        -->
             <div class="row" style="padding-left: 2%; padding-right: 2%; margin-top: 1%">
                 <?php echo $pagination; ?>
             </div>

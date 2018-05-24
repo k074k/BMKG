@@ -10,23 +10,10 @@
     <div class="col-lg-12">
         <div class="col-lg-8" style="margin-bottom: 60px; padding-left: 3%; padding-top: 1%;">
             <div class="row">
-                <div class="col-lg-3">
-                    <form role="form">
-                        <div class="form-group">
-                            <select class="form-control">
-                                <option>---- Pilih Tahun ----</option>
-                                <option>2015</option>
-                                <option>2016</option>
-                                <option>2017</option>
-                                <option>2018</option>
-                            </select>
-                        </div>
-                    </form>
-                </div>
-                <div class="col-lg-9">
+                <div class="col-lg-12">
                     <form role="form">
                         <div class="form-group input-group">
-                            <input type="text" class="form-control" placeholder="Kata Kunci . . . . . . .">
+                            <input name="search_artikel" type="text" class="form-control" placeholder="Kata Kunci Judul . . . . . . .">
                             <span class="input-group-btn">
                                 <button class="btn btn-default" type="button">
                                     <i class="glyphicon glyphicon-search">
@@ -38,8 +25,7 @@
                 </div>
             </div>
             <?php 
-            foreach ($data->result() as $row) {
-                
+            foreach ($data->result() as $row) {    
             ?>
             <div class="row" style="padding-left: 2%; padding-right: 2%; ">
                 <div class="col-lg-12" style="background-color: white; box-shadow: 1px 1px 3px grey; padding-top: 3%">
@@ -55,8 +41,12 @@
                             <?php echo $row->ket; ?>
                         </p>
                         <div class="form-group ">
-                            <input type="hidden" name="artikel" value="<?php echo $row->id_buletin; ?>">
                             <a data-toggle="modal" data-target="#myModal" type="button" class="btn btn-default">View Details</a>
+                            <a href="<?php echo base_url('assets/db_buletin/file/'.$row->id_buletin.'.pdf'); ?>">
+                                <button type="submit" class="btn btn-primary">
+                                    Unduh
+                                </button>
+                            </a>
                         </div>
 
                         <!-- Modal -->
@@ -77,7 +67,6 @@
                                     </div>
                                     <!-- footer modal -->
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Tutup Modal</button>
                                     </div>
                                 </div>
                             </div>

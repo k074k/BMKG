@@ -6,9 +6,8 @@ class publikasi extends CI_Controller {
     function __construct(){
         parent::__construct();
         $this->load->model('m_data');
-        $this->load->library('pagination');
-        $this->load->helper(array('url', 'download'));
-        $this->load->database();
+        $this->load->library(array('pagination'));
+        $this->load->helper(array('url', 'download', 'file', 'form'));
         $this->load->library('form_validation');    
         
     }
@@ -51,11 +50,19 @@ class publikasi extends CI_Controller {
 
         $data['pagination'] = $this->pagination->create_links();
 
+
         $this->load->view('v_header');
         $this->load->view('Publikasi/v_publikasi', $data);
         $this->load->view('v_footer');
     }
 
+    public function search(){
+        $keyword = $this->input->get('search', TRUE);
+        $data['buletin'] = $this->m_data->search($keyword);
+        $this->load->view('v_header');
+        $this->load->view('Publikasi/v_publikasi', $data);
+        $this->load->view('v_footer');
+    }
     /*
     public function download(){
         $file = $this->uri->segment(4);
@@ -101,11 +108,13 @@ class publikasi extends CI_Controller {
 
         $data['pagination'] = $this->pagination->create_links();
 
+
         $this->load->view('v_header');
         $this->load->view('Publikasi/v_artikel', $data);
         $this->load->view('v_footer');
     }
 
+    /*
     public function detailArtikel() {
         $id = $this->input->post('artikel');
         $data = array(
@@ -116,6 +125,8 @@ class publikasi extends CI_Controller {
         $this->load->view('Publikasi/v_detailArtikel', $data);
         $this->load->view('v_footer');
     }
+    */
+    
     public function layananOnline() {
         $this->load->view('v_header');
         $this->load->view('Publikasi/v_katalog');
