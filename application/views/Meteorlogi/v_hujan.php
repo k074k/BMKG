@@ -43,6 +43,7 @@
                     <div id="grafik4" style="margin-top: 5%"></div>
                     <div id="grafik5" style="margin-top: 5%; margin-bottom: 5%"></div>
                 </div>
+
                 <div id="metodologi" class="tab-pane fade" style="padding-bottom: 5%">
                     <div class="panel panel-default" >
                         <div class="panel-body">
@@ -62,10 +63,44 @@
                         </div>
                     </div>
                 </div>
+
                 <div id="alat" class="tab-pane fade">
+                    <div class="col-lg-12" style="margin-bottom: 5%">
+                        <h2><hr><center>Penakar Hujan Hellman</center><hr></h2><br>
+                        <div class="col-lg-4">
+                            <center>
+                                <img src="<?php echo base_url('assets/img/alat/penakarhujanhellman1.jpg') ?>" class="img-responsive">
+                            </center>
+                        </div>
+                        <div class="col-lg-4">
+                            <center>
+                                <img src="<?php echo base_url('assets/img/alat/penakarhujanhellman2.jpg') ?>" class="img-responsive">
+                            </center>
+                        </div>
+                        <div class="col-lg-4">
+                            <center>
+                                <img src="<?php echo base_url('assets/img/alat/penankarhujanobs.jpg') ?>" class="img-responsive">
+                            </center>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12" style="margin-bottom: 5%">
+                        <h2><hr><center>Penakar Hujan ARG</center><hr></h2><br>
+                        <div class="col-lg-6">
+                            <center>
+                                <img src="<?php echo base_url('assets/img/alat/arg.jpg') ?>" class="img-responsive">
+                            </center>
+                        </div>
+                        <div class="col-lg-6">
+                            <center>
+                                <img src="<?php echo base_url('assets/img/alat/arg1.jpg') ?>" class="img-responsive">
+                            </center>
+                        </div>
+                    </div>
+
+
                 </div>
             </div> 
-            
         </div>
 
         <script type="text/javascript">

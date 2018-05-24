@@ -14,7 +14,7 @@
                           <nav style="width:100%;height:100%;overflow: auto;" >
                             <ul class="list-group" style="margin-top: 5%;">
                               <?php foreach ($tb_gempa as $i) { ?>
-                                <li class="list-group-item"><?php echo $i->Keterangan ?><span class="badge"><?php echo $i->Magnitude ?>SR</span></li>
+                                <li class="list-group-item"><span class="badge"><?php echo $i->Magnitude ?>SR</span><?php echo $i->Keterangan ?></li>
                               <?php } ?>
                             </ul>
                           </nav>

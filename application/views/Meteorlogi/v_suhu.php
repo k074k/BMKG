@@ -64,6 +64,19 @@
                     </div>
                 </div>
                 <div id="alat" class="tab-pane fade">
+                    <div class="col-lg-12" style="margin-bottom: 5%">
+                        <h2><hr><center>Thermometer Suhu Udara</center><hr></h2><br>
+                        <div class="col-lg-6">
+                            <center>
+                                <img src="<?php echo base_url('assets/img/alat/sangkarmeteorologi.jpg') ?>" class="img-responsive">
+                            </center>
+                        </div>
+                        <div class="col-lg-6">
+                            <center>
+                                <img src="<?php echo base_url('assets/img/alat/bolabasahbolakering.jpg') ?>" class="img-responsive">
+                            </center>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

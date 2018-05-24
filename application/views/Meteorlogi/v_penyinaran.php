@@ -47,6 +47,19 @@
                     </div>
                 </div>
                 <div id="alat" class="tab-pane fade">
+                    <div class="col-lg-12" style="margin-bottom: 5%">
+                        <h2><hr><center>Campbell Stokes</center><hr></h2><br>
+                        <div class="col-lg-6">
+                            <center>
+                                <img src="<?php echo base_url('assets/img/alat/pengukursinarmatahari1.jpg') ?>" class="img-responsive">
+                            </center>
+                        </div>
+                        <div class="col-lg-6">
+                            <center>
+                                <img src="<?php echo base_url('assets/img/alat/pengukursinarmatahari2.jpg') ?>" class="img-responsive">
+                            </center>
+                        </div>
+                    </div>
                 </div>
             </div> 
 

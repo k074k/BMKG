@@ -39,9 +39,17 @@
                         </p>
                         <p style="font-size: 12px">
                             <?php echo $row->ket; ?>
+                            <?php   $judul = $row->judul; 
+                                    $id = $row->id_buletin;
+                            ?>
                         </p>
                         <div class="form-group ">
-                            <a data-toggle="modal" data-target="#myModal" type="button" class="btn btn-default">View Details</a>
+                            <!--<a data-toggle="modal" data-target="#Modal" type="button" class="btn btn-default">View Details</a>-->
+                            <a href="<?php echo base_url('assets/db_buletin/file/'.$row->id_buletin.'.pdf'); ?>">
+                                <button type="submit" class="btn btn-default">
+                                    View Detail
+                                </button>
+                            </a>
                             <a href="<?php echo base_url('assets/db_buletin/file/'.$row->id_buletin.'.pdf'); ?>">
                                 <button type="submit" class="btn btn-primary">
                                     Unduh
@@ -49,28 +57,30 @@
                             </a>
                         </div>
 
-                        <!-- Modal -->
-                        <div id="myModal" class="modal fade" role="dialog">
+                        <!-- 
+                        <div id="Modal" class="modal fade" role="dialog">
                             <div class="modal-dialog">
-                                <!-- konten modal-->
+                                
                                 <div class="modal-content">
-                                    <!-- heading modal -->
+                                    
                                     <div class="modal-header">
                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                                         <h4 class="modal-title"><center><?php echo $row->judul; ?></center></h4>
                                     </div>
-                                    <!-- body modal -->
+                                   
                                     <div class="modal-body">
                                         <div class="embed-responsive embed-responsive-4by3">
                                             <embed src="<?php echo base_url('db_buletin/file/'.$row->id_buletin.'.pdf'); ?>" type="apliccation/pdf" width="50%" height="100%" />
                                         </div>
                                     </div>
-                                    <!-- footer modal -->
+                                    
                                     <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        -->
 
                     </div>
                 </div>

@@ -63,6 +63,14 @@
                     </div>
                 </div>
                 <div id="alat" class="tab-pane fade">
+                    <div class="col-lg-12" style="margin-bottom: 5%">
+                        <h2><hr><center>Barometer</center><hr></h2><br>
+                        <div class="col-lg-12">
+                            <center>
+                                <img src="<?php echo base_url('assets/img/alat/barometer.jpg') ?>" class="img-responsive">
+                            </center>
+                        </div>
+                    </div>
                 </div>
             </div>           
         </div>

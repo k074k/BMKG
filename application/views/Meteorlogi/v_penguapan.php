@@ -47,6 +47,14 @@
                     </div>
                 </div>
                 <div id="alat" class="tab-pane fade">
+                    <div class="col-lg-12" style="margin-bottom: 5%">
+                        <h2><hr><center>Panci Penguapan</center><hr></h2><br>
+                        <div class="col-lg-12">
+                            <center>
+                                <img src="<?php echo base_url('assets/img/alat/pancipenguapan.jpg') ?>" class="img-responsive">
+                            </center>
+                        </div>
+                    </div>
                 </div>
             </div> 
 
