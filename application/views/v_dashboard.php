@@ -13,8 +13,16 @@
                         <div style="margin-top:10px; background-color:white; height: 400px; box-shadow: 1px 1px 3px grey;" class="col-lg-12">
                           <nav style="width:100%;height:100%;overflow: auto;" >
                             <ul class="list-group" style="margin-top: 5%;">
+                              <?php error_reporting(0); ?>
+                              <?php $i=10; ?>
                               <?php foreach ($tb_gempa as $i) { ?>
-                                <li class="list-group-item"><span class="badge"><?php echo $i->Magnitude ?>SR</span><?php echo $i->Keterangan ?></li>
+                                <li class="list-group-item"><span class="badge"><?php echo $i->Magnitude ?>SR</span><?php echo $i->Keterangan;?></li>
+                                <?php if ($i == 10) {
+                                  break;
+                                } else {
+                                  $i++;
+                                }
+                                 ?>
                               <?php } ?>
                             </ul>
                           </nav>
@@ -37,6 +45,7 @@
                         center: {lat:-8.0014771, lng: 114.6530128},
                       });
                       var image = '<?php echo base_url('assets/img/earthquake.png') ?>';
+
                       <?php foreach($tb_gempa as $t) {?>
                       var secretMessages = ['<?php echo $t->Keterangan ?>'];
                       for (var i = 0; i < secretMessages.length; ++i) {
