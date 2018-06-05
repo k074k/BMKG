@@ -38,7 +38,7 @@
                   });
 
                   var secretMessages = 'Denpasar, 5 SR ,100m';
-                  var image = '<?php echo base_url('assets/icon/iconStorm.png'); ?>';
+                  var image = '<?php echo base_url('assets/icon/CGPlus.png'); ?>';
                   var marker = new google.maps.Marker({
                     position: {
                       lat: -8.6769762 ,
