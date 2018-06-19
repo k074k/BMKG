@@ -1,4 +1,5 @@
 <?php
+error_reporting(0);
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class publikasi extends CI_Controller {
@@ -8,13 +9,13 @@ class publikasi extends CI_Controller {
         $this->load->model('m_data');
         $this->load->library(array('pagination'));
         $this->load->helper(array('url', 'download', 'file', 'form'));
-        $this->load->library('form_validation');    
-        
+        $this->load->library('form_validation');
+
     }
 
     public function index() {
         // $data['buletin'] = $this->m_data->get_buletin()->result();
-        
+
         // Konfigurasi Pagination
         $config['base_url'] = base_url('publikasi/index');
         $config['total_rows'] = $this->db->count_all('tb_buletin');
@@ -126,7 +127,7 @@ class publikasi extends CI_Controller {
         $this->load->view('v_footer');
     }
     */
-    
+
     public function layananOnline() {
         $this->load->view('v_header');
         $this->load->view('Publikasi/v_katalog');

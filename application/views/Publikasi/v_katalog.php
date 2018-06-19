@@ -46,10 +46,9 @@
           function starttahunan(){
             interval = setInterval("tahunan()",1);}
           function tahunan(){
-            tahunM = document.tahunan.tahunM.value;
-            tahunA = document.tahun.tahunA.value;
+            jumlah = document.tahunan.txtTahunan.value;
             jenis = document.tahunan.txtJenis.value;
-            document.tahunan.txtHarga.value = (jenis*1) + ((tahunA*1) - (tahunM*1));}
+            document.tahunan.txtHarga.value = (jenis*1) * (jumlah*1);}
           function stoptahunan(){
             clearInterval(interval);}
       </script>
@@ -61,7 +60,7 @@
                     <thead>
                         <tr>
                             <th style="text-align:center;">Jenis Data</th>
-                            <th style="text-align:center;">Tanggal Mulai</th>
+                            <th style="text-align:center;">Dari Tanggal</th>
                             <th style="text-align:center;">Jumlah Hari</th>
                             <th style="text-align:center;">Harga</th>
                             <th><input type="checkbox" id="checkedAll" style="width: 20px; height: 20px"></th>
@@ -125,8 +124,8 @@
                     <thead>
                         <tr>
                             <th style="text-align:center;">Jenis Data</th>
-                            <th style="text-align:center;">Bulan Mulai</th>
-                            <th style="text-align:center;">Tahun Akhir</th>
+                            <th style="text-align:center;">Dari Bulan</th>
+                            <th style="text-align:center;">Dari Tahun</th>
                             <th style="text-align:center;">Jumlah Bulan</th>
                             <th style="text-align:center;">Harga</th>
                             <th><input type="checkbox" id="checkedAll2" style="width: 20px; height: 20px"></th>
@@ -226,8 +225,8 @@
                     <thead>
                         <tr>
                             <th style="text-align:center;">Jenis Data</th>
-                            <th style="text-align:center;">Tahun Mulai</th>
-                            <th style="text-align:center;">Tahun Akhir</th>
+                            <th style="text-align:center;">Dari Tahun</th>
+                            <th style="text-align:center;">Jumlah Tahun</th>
                             <th style="text-align:center;">Harga</th>
                             <th><input type="checkbox" id="checkedAll3" style="width: 20px; height: 20px"></th>
                         </tr>
@@ -261,14 +260,7 @@
                                 </select>
                             </td>
                             <td>
-                                <select  name="TahunA" class="form-group form-control">
-                                    <option>--Pilih Tahun--</option>
-                                    <option value="2018">2018</option>
-                                    <option value="2017">2017</option>
-                                    <option value="2016">2016</option>
-                                    <option value="2015">2015</option>
-                                    <option value="2014">2014</option>
-                                </select>
+                              <input name="txtTahunan" type="input" class="form-group form-control" onfocus="starttahunan();" onblur="stoptahunan();">
                             </td>
                             <td><input id="harga" name="txtHarga" type="input" class="form-group form-control" disabled="disabled" value="0"></td>
                             <td><input name="ckcDel[]" type="checkbox" class="form-group form-control " style="width: 20px; height: 20px"></td>
@@ -306,172 +298,119 @@
 <div class="container" style="background-color: white; margin-top: 25px;">
     <div class="container" style="padding-top: 25px; margin-bottom: 50px">
         <div class="col-lg-12">
+          <form action="<?php echo base_url('publikasi/layananOnline'); ?>" method="post">
             <div class="col-lg-2">
-                <form role="form">
-                    <div class="form-group">
-                        <select class="form-control">
-                            <option>---- Pilih Bulan ----</option>
-                            <option>Januari</option>
-                            <option>Februari</option>
-                            <option>Maret</option>
-                            <option>April</option>
-                            <option>Mei</option>
-                            <option>Juni</option>
-                            <option>Juli</option>
-                            <option>Agustus</option>
-                            <option>September</option>
-                            <option>Oktober</option>
-                            <option>November</option>
-                            <option>Desember</option>
-                        </select>
-                    </div>
-                </form>
-            </div>
-            <div class="col-lg-2">
-                <form role="form">
-                    <div class="form-group">
-                        <select class="form-control">
-                            <option>---- Pilih Tahun ----</option>
-                            <option>2015</option>
-                            <option>2016</option>
-                            <option>2017</option>
-                            <option>2018</option>
-                        </select>
-                    </div>
-                </form>
-            </div>
-            <div class="col-lg-2">
-              <form role="form">
               <div class="form-group">
-                <a type="button" class="btn btn-default" href=" ">Search</a>
+                <select name="bulan" class="form-control">
+                  <option >---- Pilih Bulan ----</option>
+                  <option value="1" >Januari</option>
+                  <option value="2" >Februari</option>
+                  <option value="3" >Maret</option>
+                  <option value="4" >April</option>
+                  <option value="5" >Mei</option>
+                  <option value="6" >Juni</option>
+                  <option value="7" >Juli</option>
+                  <option value="8" >Agustus</option>
+                  <option value="9" >September</option>
+                  <option value="10" >Oktober</option>
+                  <option value="11" >November</option>
+                  <option value="12" >Desember</option>
+                </select>
               </div>
-              </form>
             </div>
+            <div class="col-lg-2">
+              <div class="form-group">
+                <select name="tahun" class="form-control">
+                  <option >---- Pilih Tahun ----</option>
+                  <option value="2013" >2013</option>
+                  <option value="2014" >2014</option>
+                  <option value="2015" >2015</option>
+                  <option value="2016" >2016</option>
+                  <option value="2017" >2017</option>
+                  <option value="2018" >2018</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="form-group">
+                <button type="submit" class="btn btn-default">Search</button>
+              </div>
+            </div>
+          </form>
 
             <table class="table table-striped" style="width: 100%;">
             <!--Table Head-->
-                <thead>
-                    <tr>
-                        <th rowspan="2" style="text-align: center; padding-bottom: 2.5%; font-size: 16px">Jenis Data</th>
-                        <th colspan="31" style="text-align: center">Bulan : Tahun</th>
-                    </tr>
-                    <tr>
-                        <?php for($i = 1; $i <= 31; $i++)
-                        {?>
-                            <th><?php echo $i?></th>
-                        <?php }?>
-                    </tr>
-                </thead>
+            <thead>
+              <tr>
+                <th rowspan="2" style="text-align: center; padding-bottom: 2.5%; font-size: 16px">Jenis Data</th>
+                <th colspan="31" style="text-align: center">Bulan: <?php echo $_POST['bulan'];?>  Tahun: <?php echo $_POST['tahun'];?></th>
+              </tr>
+              <tr>
+                <?php
+                $batas=0;
+                $bulan = $_POST['bulan'];
+                $tahun = $_POST['tahun'];
 
+                switch($bulan) {
+                  case "01":
+                  case "03":
+                  case "05":
+                  case "07":
+                  case "08":
+                  case "10":
+                  case "12":
+                  $batas = 31;
+                  break;
+                  case "04":
+                  case "06":
+                  case "09":
+                  case "11":
+                  $batas = 30;
+                  break;
+                  case "02":
+                  $tahun % 4 == 0 ? $batas = 29 : $batas = 28;
+                  break;
+                }
+                for ($i=1; $i <= $batas; $i++) {
+                  echo "<th>$i</th>";
+                }?>
+              </tr>
+            </thead>
             <!--Table Body-->
-                <tbody>
+            <tbody>
+              <!--Data Gempa-->
+              <tr>
+                <td>Data Gempa</td>
+                <?php for($i = 1; $i <= $batas; $i++) {
+                  if (condition) {
+                    // code...
+                  }else {
+                    // code...
+                  }
+                  ?>
 
-            <!--Data Gempa-->
-                    <tr>
-                        <td>Data Gempa</td>
-                        <?php for($i = 1; $i <= 31; $i++)
-                        {?>
-                        <th><span class="glyphicon glyphicon-ok-circle" style="font-size:14px;color:green"></span></th>
-                        <?php }?>
-                    </tr>
 
-                    <!--Data Petir-->
-                    <tr>
-                        <td>Data Petir</td>
-                        <?php for($i = 1; $i <= 31; $i++)
-                        {?>
-                        <th><span class="glyphicon glyphicon-ok-circle" style="font-size:14px;color:green"></span></th>
-                        <?php }?>
-                    </tr>
+                  <th>
+                    <span class="glyphicon glyphicon-remove-circle" style="font-size:14px;color:#595959"></span>
+                  </th>
+                <?php }?>
+              </tr>
 
-                    <!--Data Angin-->
-                    <tr>
-                        <td>Data Angin</td>
-                        <?php for($i = 1; $i <= 31; $i++)
-                        {?>
-                        <th><span class="glyphicon glyphicon-ok-circle" style="font-size:14px;color:green"></span></th>
-                        <?php }?>
-                    </tr>
-
-                    <!--Data Hari Hujan-->
-                    <tr>
-                        <td>Data Harian Hujan</td>
-                        <?php for($i = 1; $i <= 31; $i++)
-                        {?>
-                        <th><span class="glyphicon glyphicon-ok-circle" style="font-size:14px;color:green"></span></th>
-                        <?php }?>
-                    </tr>
-
-                    <!--Data Suhu-->
-                    <tr>
-                        <td>Data Suhu</td>
-                        <?php for($i = 1; $i <= 31; $i++)
-                        {?>
-                        <th><span class="glyphicon glyphicon-ok-circle" style="font-size:14px;color:green"></span></th>
-                        <?php }?>
-                    </tr>
-
-                    <!--Data Kelembapan-->
-                    <tr>
-                        <td>Data Kelembapan</td>
-                        <?php for($i = 1; $i <= 31; $i++)
-                        {?>
-                        <th><span class="glyphicon glyphicon-ok-circle" style="font-size:14px;color:green"></span></th>
-                        <?php }?>
-                    </tr>
-
-                    <!--Lama Penyinaran-->
-                    <tr>
-                        <td>Lama penyinaran</td>
-                        <?php for($i = 1; $i <= 31; $i++)
-                        {?>
-                        <th><span class="glyphicon glyphicon-ok-circle" style="font-size:14px;color:green"></span></th>
-                        <?php }?>
-                    </tr>
-
-                    <!--Arah/Kecepatan Angin-->
-                    <tr>
-                        <td>Arah/Kecepatan Angin</td>
-                        <?php for($i = 1; $i <= 31; $i++)
-                        {?>
-                        <th><span class="glyphicon glyphicon-ok-circle" style="font-size:14px;color:green"></span></th>
-                        <?php }?>
-                    </tr>
-
-                    <!--Data Penguapan-->
-                    <tr>
-                        <td>Data Penguapan</td>
-                        <?php for($i = 1; $i <= 31; $i++)
-                        {?>
-                        <th><span class="glyphicon glyphicon-ok-circle" style="font-size:14px;color:green"></span></th>
-                        <?php }?>
-                    </tr>
-
-                    <!--Data Curah Hujan-->
-                    <tr>
-                        <td>Data Curah Hujan</td>
-                        <?php for($i = 1; $i <= 31; $i++)
-                        {?>
-                        <th><span class="glyphicon glyphicon-ok-circle" style="font-size:14px;color:green"></span></th>
-                        <?php }?>
-                    </tr>
-
-                    <!--Data Intensitas Hujan-->
-                    <tr>
-                        <td>Data Intensitas Hujan</td>
-                        <?php for($i = 1; $i <= 31; $i++)
-                        {?>
-                        <th><span class="glyphicon glyphicon-ok-circle" style="font-size:14px;color:green"></span></th>
-                        <?php }?>
-                    </tr>
-                </tbody>
-            </table>
+              <!--Data Petir-->
+              <tr>
+                <td>Data Petir</td>
+                <?php for($i = 1; $i <= $batas; $i++) {?>
+                  <th><span class="glyphicon glyphicon-remove-circle" style="font-size:14px;color:#595959"></span></th>
+                <?php }?>
+              </tr>
+            </tbody>
+          </table>
         </div>
     </div>
 </div>
 
-<!-- Koding icon Circle X -->
-<!-- <span class="glyphicon glyphicon-remove-circle" style="font-size:24px;"> -->
+<!-- Koding icon Circle V -->
+<!-- class="glyphicon glyphicon-ok-circle" -->
 
 <script>
   // For select all checkbox in table
