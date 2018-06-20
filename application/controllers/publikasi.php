@@ -1,5 +1,4 @@
 <?php
-error_reporting(0);
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class publikasi extends CI_Controller {
@@ -129,8 +128,10 @@ class publikasi extends CI_Controller {
     */
 
     public function layananOnline() {
+        $data['tb_gempa'] = $this->m_data->ambil_data()->result();
+
         $this->load->view('v_header');
-        $this->load->view('Publikasi/v_katalog');
+        $this->load->view('Publikasi/v_katalog', $data);
         $this->load->view('v_footer');
     }
 

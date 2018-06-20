@@ -1,4 +1,5 @@
 <!--Judul-->
+<?php error_reporting(0); ?>
 <div class="container" style="margin-top: 70px">
     <div class="container" style="margin-left:45px;">
         <div class="row">
@@ -343,7 +344,7 @@
             <thead>
               <tr>
                 <th rowspan="2" style="text-align: center; padding-bottom: 2.5%; font-size: 16px">Jenis Data</th>
-                <th colspan="31" style="text-align: center">Bulan: <?php echo $_POST['bulan'];?>  Tahun: <?php echo $_POST['tahun'];?></th>
+                <th colspan="31" style="text-align: center">Bulan: <?php echo $_POST['bulan'];?> Tahun: <?php echo $_POST['tahun'];?></th>
               </tr>
               <tr>
                 <?php
@@ -381,26 +382,100 @@
               <!--Data Gempa-->
               <tr>
                 <td>Data Gempa</td>
-                <?php for($i = 1; $i <= $batas; $i++) {
-                  if (condition) {
-                    // code...
-                  }else {
-                    // code...
-                  }
-                  ?>
-
-
-                  <th>
-                    <span class="glyphicon glyphicon-remove-circle" style="font-size:14px;color:#595959"></span>
-                  </th>
-                <?php }?>
+                <?php
+                $tgl = array();
+                $a=1;
+                foreach ($tb_gempa as $t) {
+                  $tgl [$a++] = "$t->TanggalGempa";
+                  $bln = "$t->BulanGempa";
+                  $thn = "$t->TahunGempa";
+                } ?>
+                <?php for ($i=1;$i<=$batas;$i++) {
+                  if ($tgl[$i]==$i || $bln==$bulan && $thn==$tahun) {?>
+                    <th><span class="glyphicon glyphicon-ok-circle" style="font-size:14px;color:green"></span></th>
+                  <?php } else { ?>
+                    <th><span class="glyphicon glyphicon-remove-circle" style="font-size:14px;color:grey"></span></th>
+                  <?php }
+                } ?>
               </tr>
 
               <!--Data Petir-->
               <tr>
                 <td>Data Petir</td>
                 <?php for($i = 1; $i <= $batas; $i++) {?>
-                  <th><span class="glyphicon glyphicon-remove-circle" style="font-size:14px;color:#595959"></span></th>
+                  <th><span class="glyphicon glyphicon-remove-circle" style="font-size:14px;color:grey"></span></th>
+                <?php }?>
+              </tr>
+
+              <!--Data Angin-->
+              <tr>
+                <td>Data Angin</td>
+                <?php for($i = 1; $i <= $batas; $i++) {?>
+                  <th><span class="glyphicon glyphicon-remove-circle" style="font-size:14px;color:grey"></span></th>
+                <?php }?>
+              </tr>
+
+              <!--Data Hari Hujan-->
+              <tr>
+                <td>Data Hari Hujan</td>
+                <?php for($i = 1; $i <= $batas; $i++) {?>
+                  <th><span class="glyphicon glyphicon-remove-circle" style="font-size:14px;color:grey"></span></th>
+                <?php }?>
+              </tr>
+
+              <!--Data Suhu-->
+              <tr>
+                <td>Data Suhu</td>
+                <?php for($i = 1; $i <= $batas; $i++) {?>
+                  <th><span class="glyphicon glyphicon-remove-circle" style="font-size:14px;color:grey"></span></th>
+                <?php }?>
+              </tr>
+
+              <!--Data Kelembapan-->
+              <tr>
+                <td>Data Kelembapan</td>
+                <?php for($i = 1; $i <= $batas; $i++) {?>
+                  <th><span class="glyphicon glyphicon-remove-circle" style="font-size:14px;color:grey"></span></th>
+                <?php }?>
+              </tr>
+
+              <!--Data Penyinaran-->
+              <tr>
+                <td>Data Penyinaran</td>
+                <?php for($i = 1; $i <= $batas; $i++) {?>
+                  <th><span class="glyphicon glyphicon-remove-circle" style="font-size:14px;color:grey"></span></th>
+                <?php }?>
+              </tr>
+
+              <!--Data Arah/Kecepatan Angin-->
+              <tr>
+                <td>Data Arah/Kecepatan Angin</td>
+                <?php for($i = 1; $i <= $batas; $i++) {?>
+                  <th><span class="glyphicon glyphicon-remove-circle" style="font-size:14px;color:grey"></span></th>
+                <?php }?>
+              </tr>
+
+              <!--Data Penguapan-->
+              <tr>
+                <td>Data Penguapan</td>
+                <?php for($i = 1; $i <= $batas; $i++) {?>
+                  <th><span class="glyphicon glyphicon-remove-circle" style="font-size:14px;color:grey"></span></th>
+                <?php }?>
+              </tr>
+
+              <!--Data Curah Hujan-->
+              <tr>
+                <td>Data Curah Hujan</td>
+                <?php for($i = 1; $i <= $batas; $i++) {?>
+                  <th><span class="glyphicon glyphicon-remove-circle" style="font-size:14px;color:grey"></span></th>
+                <?php }?>
+              </tr>
+
+              <!--Data Intensitas Hujan-->
+              <tr>
+                <td>Data Intensitas Hujan</td>
+                <?php for($i = 1; $i <= $batas; $i++) {?>
+                  <th><span class="glyphicon glyphicon-remove-circle" style="font-size:14px;color:grey"></span></th>
                 <?php }?>
               </tr>
             </tbody>

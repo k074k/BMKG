@@ -1,9 +1,13 @@
 <?php
 class M_data extends CI_Model{
-	
+
 	public function ambil_data(){
 		return $this->db->get('tb_gempa');
 	}
+
+	public function get_katalog(){
+ 	 return $this->db->get('tb_gempa');
+  }
 
 	public function get_data($table){
 		return $this->db->get($table);
@@ -11,7 +15,7 @@ class M_data extends CI_Model{
 
   	public function get_buletin_list($number, $offset){
   		$this->db->order_by(1, "desc");
-		$query = $this->db->get('tb_buletin', $number, $offset);		
+		$query = $this->db->get('tb_buletin', $number, $offset);
 		return $query;
 	}
 
