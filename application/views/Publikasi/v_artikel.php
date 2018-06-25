@@ -24,8 +24,8 @@
                     </form>
                 </div>
             </div>
-            <?php 
-            foreach ($data->result() as $row) {    
+            <?php
+            foreach ($data->result() as $row) {
             ?>
             <div class="row" style="padding-left: 2%; padding-right: 2%; ">
                 <div class="col-lg-12" style="background-color: white; box-shadow: 1px 1px 3px grey; padding-top: 3%">
@@ -35,11 +35,11 @@
                     </div>
                     <div class="col-lg-10" style="padding-bottom: 2%;">
                         <h5 style="font-weight: bold"><?php echo $row->judul; ?></h5>
-                        <p style="font-size: 11px">Nomer Katalog : <?php echo $row->id_buletin; ?> | ISSN / ISBN : - | Tanggal Rilis : <?php echo $row->tgl_rilis; ?> | Ukuran File : <?php  echo $row->size; ?> MB 
+                        <p style="font-size: 11px">Nomer Katalog : <?php echo $row->id_buletin; ?> | ISSN / ISBN : - | Tanggal Rilis : <?php echo $row->tgl_rilis; ?> | Ukuran File : <?php  echo $row->size; ?> MB
                         </p>
                         <p style="font-size: 12px">
                             <?php echo $row->ket; ?>
-                            <?php   $judul = $row->judul; 
+                            <?php   $judul = $row->judul;
                                     $id = $row->id_buletin;
                             ?>
                         </p>
@@ -57,23 +57,23 @@
                             </a>
                         </div>
 
-                        <!-- 
+                        <!--
                         <div id="Modal" class="modal fade" role="dialog">
                             <div class="modal-dialog">
-                                
+
                                 <div class="modal-content">
-                                    
+
                                     <div class="modal-header">
                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                                         <h4 class="modal-title"><center><?php echo $row->judul; ?></center></h4>
                                     </div>
-                                   
+
                                     <div class="modal-body">
                                         <div class="embed-responsive embed-responsive-4by3">
                                             <embed src="<?php echo base_url('db_buletin/file/'.$row->id_buletin.'.pdf'); ?>" type="apliccation/pdf" width="50%" height="100%" />
                                         </div>
                                     </div>
-                                    
+
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                     </div>
@@ -94,19 +94,27 @@
         <div class="col-lg-4" style="padding-bottom: 100px">
             <ul class="nav nav-tabs" style="margin-top: 3%">
                 <li class="active">
-                    <a data-toggle="tab" href="#Gempa" style="font-size: 12px; font-weight: bold">Gempabumi M ≥ 5.0</a>
-                </li>
-                <li>
-                    <a data-toggle="tab" href="#Gempa2" style="font-size: 12px; font-weight: bold">Gempabumi Dirasakan</a>
+                    <a data-toggle="tab" href="#Gempa" style="font-size: 12px; font-weight: bold">Gempa Terakhir</a>
                 </li>
             </ul>
             <div class="tab-content">
                 <div id="Gempa" class="tab-pane fade in active">
                     <div style="margin-top:10px; background-color:white; height: 400px; box-shadow: 1px 1px 3px grey;" class="col-lg-12">
-                    </div>
-                </div>
-                <div id="Gempa2" class="tab-pane fade">
-                    <div style="margin-top:10px; background-color:white; height: 400px; box-shadow: 1px 1px 3px grey;" class="col-lg-12">
+                      <nav style="width:100%;height:100%;overflow: auto;" >
+                        <ul class="list-group" style="margin-top: 5%;">
+                          <?php error_reporting(0); ?>
+                          <?php $i=10; ?>
+                          <?php foreach ($tb_gempa as $i) { ?>
+                            <li class="list-group-item"><span class="badge"><?php echo $i->Magnitude ?>SR</span><?php echo $i->Keterangan;?></li>
+                            <?php if ($i == 10) {
+                              break;
+                            } else {
+                              $i++;
+                            }
+                             ?>
+                          <?php } ?>
+                        </ul>
+                      </nav>
                     </div>
                 </div>
             </div>

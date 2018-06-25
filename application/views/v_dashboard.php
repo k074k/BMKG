@@ -5,7 +5,7 @@
             <div class="col-lg-4">
                 <ul class="nav nav-tabs" style="margin-top:25px">
                     <li class="active">
-                        <a data-toggle="tab" href="#Gempa" style="font-size: 12px; font-weight: bold">Latest Earthquakes</a>
+                        <a data-toggle="tab" href="#Gempa" style="font-size: 12px; font-weight: bold">Gempa Terakhir</a>
                     </li>
                 </ul>
                 <div class="tab-content">

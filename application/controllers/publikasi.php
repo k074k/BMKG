@@ -50,6 +50,7 @@ class publikasi extends CI_Controller {
 
         $data['pagination'] = $this->pagination->create_links();
 
+        $data['tb_gempa'] = $this->m_data->ambil_data()->result();
 
         $this->load->view('v_header');
         $this->load->view('Publikasi/v_publikasi', $data);
@@ -108,6 +109,7 @@ class publikasi extends CI_Controller {
 
         $data['pagination'] = $this->pagination->create_links();
 
+        $data['tb_gempa'] = $this->m_data->ambil_data()->result();
 
         $this->load->view('v_header');
         $this->load->view('Publikasi/v_artikel', $data);
